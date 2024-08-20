@@ -1,0 +1,631 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r data_import}
+read.csv("Minimum Stipend Data Collection_v1.csv")->sos
+
+colnames(sos)
+
+#us https://www.nature.com/articles/d41586-022-01392-w
+read.csv("Biology Benchmark Comparison - 07-23-2024.csv")->us.data
+#exchange rate
+us.to.cad<-1.38
+#convert from usd to cad internally below
+
+
+#uk https://www.ukri.org/apply-for-funding/studentships-and-doctoral-training/london-weighting-enhanced-stipends-and-co-funding/
+#https://trustforlondon.org.uk/data/poverty-thresholds/
+  #uk cost of living
+#https://homelet.co.uk/homelet-rental-index
+  #uk average rent
+uk.stipend<-19237
+#uk.tuition.stipend<-4786
+166*52->uk.cost.of.living.min
+304*52->uk.cost.of.living.max
+uk.to.cad<-1.78
+
+#convert from gbp to cad
+uk.stipend*uk.to.cad->uk.stipend
+uk.cost.of.living.max*uk.to.cad->uk.cost.of.living.max
+uk.cost.of.living.min*uk.to.cad->uk.cost.of.living.min
+
+#NSERC Scholarships
+NSERC.msc<-27000
+NSERC.phd<-40000
+
+```
+
+
+### NOTES from during converstion to a machine readable datafile ###
+McMaster, both departments, provide "more to offset higher tuition" to the international MSc students, but the amount is unspecified.
+
+
+# Summary information
+There were `r length(sos$University)` programs within the final dataset, from `r length(unique(sos$University))` Universities. There are `r length(which(sos$Program == "MSc"))` MSc and `r length(which(sos$Program == "PhD"))` PhD programs. Of all of these different degree programs, `r length(which(sos$Example.Department == "Biological Sciences - Ecology"))/length(sos$University)*100`% were classified as closest to Ecology, while `r length(which(sos$Example.Department == "Physics"))/length(sos$University)*100`% are in Physics.
+
+Mean domestic tuition was `r mean(sos$Domestic.Tuition)`CAD, median `r median(sos$Domestic.Tuition)`CAD. Mean international tuition was `r mean(sos$International.Tuition)`CAD, median `r median(sos$International.Tuition)`CAD. Mean domestic fees were `r mean(sos$Ancillary.Fees,na.rm=TRUE)`CAD, international mean `r mean(sos$Int.Ancillary.Fees,na.rm=TRUE)`CAD. Total tuition and fees domestic mean is `r mean(sos$Total.Domestic.Fees)`CAD, while international total was `r mean(sos$Total.Int.Fees,na.rm=TRUE)`CAD. 
+
+Of the `r length(sos$University)` programs within the final dataset, `r length(which(sos$Guaranteed.Funding == "Yes"))` programs have a minimum, while `r length(which(sos$Guaranteed.Funding == ""))` had no information provided that we could access and did not respond to our requests. The average domestic minimum stipend provided was `r mean(sos$Gross.Stipend,na.rm=TRUE)`CAD, median `r median(sos$Gross.Stipend,na.rm=TRUE)`CAD. _When support is different than domestic support_, international minimum gross stipend mean is `r mean(sos$Gross.Stipend.International,na.rm=TRUE)`CAD. Net domestic mean is `r mean(sos$Net.Stipend,na.rm=TRUE)`CAD while median `r median(sos$Net.Stipend,na.rm=TRUE)`CAD. 
+
+Mean tuition Get score: `r mean(sos$Tuition.Get...2,na.rm=T)`
+Mean tuition Parse score: `r mean(sos$Tuition.Parse...2,na.rm=T)`
+Mean Stipend Get score: `r mean(sos$Stipend.Get...3,na.rm=T)`
+Mean Stipend Complete score: `r mean(sos$Stipend.Complete...3,na.rm=T)`
+
+Students repay `r mean(sos$Total.Domestic.Fees[which(sos$Guaranteed.Funding == "Yes")]/sos$Gross.Stipend[which(sos$Guaranteed.Funding == "Yes")]*100,na.rm=T)`% back to the university in the form of tuition and fees.
+
+Mean MBM Shortfall Domestic: `r mean(sos$Net.domestic...MBM.Threshold..2023.,na.rm=T)`
+Mean MBM Shortfall International: `r mean(sos$Net.International...MBM.Threshold..2023.,na.rm=T)`
+
+difference between US and Canada: `r mean(sos$Net.Stipend[which(sos$Guaranteed.Funding == "Yes")]) - mean(us.data$Annual.guaranteed.salary*us.to.cad)`
+
+
+#Plots for the paper.
+```{r paper_plots}
+# PhD vs. MSc
+  par(mfcol=c(1,2))
+      #setting up a stable y to maintain through various plots
+        ylimits<-c(min(c(sos$Net.domestic...MBM.Threshold..2024.,
+                         {us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.}*us.to.cad,
+                         uk.stipend-uk.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.max), 
+              na.rm=T),
+                   max(c(sos$Gross.Stipend,
+                         {us.data$Annual.guaranteed.salary}*us.to.cad,
+                         uk.stipend,
+                         uk.stipend), 
+              na.rm=T)
+                   )
+        
+  ## Gross Stipend (Domestic) Boxplots        
+    boxplot(sos$Gross.Stipend[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Gross Domestic")
+    abline(h=0,col="black")
+    abline(h=c(NSERC.msc,NSERC.phd),col="red")
+    
+    boxplot(us.data$Annual.guaranteed.salary*us.to.cad,
+            ylim=ylimits,
+            main="US [box],UK [line]")
+    abline(h=uk.stipend,col="blue")
+    abline(h=0,col="black")
+```
+Left panel is Canadian domestic students gross minimum stipends, two red are for federally supported students, higher is PhD, lower MSc. Right is for international comparisons. Blue is UK, which provides a single stipend amount (exception: London) for the entire funding system.
+    
+```{r Net_domestic}      
+  ## Net Stipend (Domestic) Boxplots
+    boxplot(sos$Net.Stipend[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Net Domestic")
+    abline(h=0,col="black")
+    boxplot(us.data$Annual.guaranteed.salary*us.to.cad,
+            ylim=ylimits,
+            main="US,UK")
+    abline(h=0,col="black")
+    abline(h=uk.stipend,col="blue")
+```
+Same labeling conventions as above.
+```{r domestic_poverty}
+  ## Vs. poverty threshold (Domestic)
+  par(mfcol=c(1,1))
+
+    boxplot(sos$Net.domestic...MBM.Threshold..2023.[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Supported Domestic students vs. poverty line")
+        abline(h=0)
+```
+Same labeling conventions as above. This has had the Market Basket Metric removed, as a measure of poverty provided by the government. Again, this is only for students with support. All students in departments without a minimum graduate stipend have been removed.
+## Supplemental figures
+```{r domestic_poverty_Rentals}
+  ## Vs. poverty threshold (Domestic)
+  par(mfcol=c(1,1))
+
+    boxplot(sos$Net.domestic...Rent.year[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Supported Domestic students after paying rent")
+        abline(h=0)
+```
+This is just after paying an average rent for their area and tuition and fees. No food, for example, is included.
+```{r domestic_poverty_Rentals_food}
+  ## Vs. poverty threshold (Domestic)
+  par(mfcol=c(1,1))
+
+    boxplot(sos$Net.domestic...Rent....12K[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Supported Domestic students after paying rent and assuming ~$12k for food & incidentals")
+        abline(h=0)
+```
+
+
+
+```{r University funding }
+
+plot(sos$University.Endowment..Millions.of.Dollars.[which(sos$Example.Department == "Physics")],
+     sos$Net.Stipend[which(sos$Example.Department == "Physics")],
+     pch=16,
+     col="purple",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)),
+     main="Univ. Endowment vs. Net Stipends")
+points(sos$University.Endowment..Millions.of.Dollars.[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     pch=15,
+     col="forestgreen")
+cor.test(sos$University.Endowment..Millions.of.Dollars.,
+     sos$Net.Stipend,use="complete.obs")
+
+# Line of correlation
+  lm(sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")] ~ sos$University.Endowment..Millions.of.Dollars.[which(sos$Example.Department == "Biological Sciences - Ecology")] )->lm.end
+  abline(lm.end)
+  
+#chi sq tests
+    #median(sos$University.Endowment..Millions.of.Dollars.,na.rm=T)->ue
+    #median(sos$Net.Stipend,na.rm=T)->ns
+  # or 
+    1500->ue
+    15000->ns
+abline(v=ue)
+abline(h=ns)
+
+length(which(sos$University.Endowment..Millions.of.Dollars. >= ue & 
+               sos$Net.Stipend >= ns))->up.right
+length(which(sos$University.Endowment..Millions.of.Dollars. < ue & 
+               sos$Net.Stipend >= ns))->up.left
+length(which(sos$University.Endowment..Millions.of.Dollars. < ue & 
+               sos$Net.Stipend < ns))->down.left
+length(which(sos$University.Endowment..Millions.of.Dollars. >= ue & 
+               sos$Net.Stipend < ns))->down.right
+# table
+as.table(rbind(c(up.left,up.right),c(down.left,down.right)))->table
+chisq.test(table)
+
+#GLMM
+##
+##library(lme4 )
+
+### WAS WORKING HERE ###
+
+```
+
+```{r Annual_expenses}
+plot(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.[which(sos$Example.Department == "Physics")],
+     sos$Net.Stipend[which(sos$Example.Department == "Physics")],
+     pch=16,
+     col="purple",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)),
+     main="Annual Expenses vs. Net stipends")
+points(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     pch=15,
+     col="forestgreen")
+cor.test(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.,
+     sos$Net.Stipend,use="complete.obs")
+
+
+```
+Biplots comparing the Universities endowment size vs. the funding received by the student in the first plot, while the second plot compares the annual expenses of the university against the net stipend. We are using the annual expenses as a rough proxy for the size of the university.
+
+
+# Field comparisons
+```{r field_comparisons}
+
+## Vs. field (Domestic)
+  par(mfcol=c(1,2))
+
+    boxplot(sos$Net.Stipend[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Example.Department[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="net domestic stipend, department")
+        abline(h=0)
+        
+    boxplot(sos$Net.domestic...MBM.Threshold..2023.[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Example.Department[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="MBM Shortfall, department")
+        abline(h=0)
+```
+Comparisons between Biology and Physics, in the same style as the above. Here just net domestic stipend and the MBM Shortfall. 
+
+# Provincial Comparisons
+```{r provincial}
+#Province
+  ## Gross Stipend (Domestic) Boxplots
+    boxplot(sos$Gross.Stipend[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Province[which(sos$Guaranteed.Funding == "Yes")],
+        ylim=ylimits,
+        main="Gross provincial")
+    abline(h=0)
+  ## Net Stipend (Domestic) Boxplots  
+    boxplot(sos$Net.Stipend[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Province[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Net Provincial")
+    abline(h=0)
+  ## Vs. poverty threshold (Domestic)
+    boxplot(sos$Net.domestic...MBM.Threshold..2023.[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Province[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="MBM Shortfall, provincial")
+    abline(h=0)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# All plots
+
+```{r boxplots_domestic}
+# PhD vs. MSc
+  ## Gross Stipend (Domestic) Boxplots
+par(mfcol=c(1,2))
+    boxplot(sos$Gross.Stipend ~ sos$Program,
+            ylim=c(0,max(
+              c(sos$Gross.Stipend,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
+              na.rm=T)))
+    abline(h=c(NSERC.msc,NSERC.phd),col="red")
+        boxplot(us.data$Annual.guaranteed.salary*us.to.cad,
+            ylim=c(0,max(
+              c(sos$Gross.Stipend,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
+              na.rm=T)),
+            main="US,UK")
+    abline(h=uk.stipend,col="blue")
+  
+  ## Net Stipend (Domestic) Boxplots
+    boxplot(sos$Net.Stipend ~ sos$Program,
+            ylim=c(0,max(
+              c(sos$Gross.Stipend,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
+              na.rm=T)
+                   ))
+          boxplot(us.data$Annual.guaranteed.salary*us.to.cad,
+            ylim=c(0,max(
+              c(sos$Gross.Stipend,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
+              na.rm=T)),
+            main="US,UK")
+        abline(h=uk.stipend,col="blue")
+  
+  ## Vs. poverty threshold (Domestic)
+  par(mfcol=c(1,3))
+        ylimits<-c(min(c(sos$Net.domestic...MBM.Threshold..2024.,
+                         {us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.}*us.to.cad,
+                         uk.stipend-uk.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.max), 
+              na.rm=T),
+                   max(c(sos$Net.domestic...MBM.Threshold..2024.,
+                         {us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.}*us.to.cad,
+                         uk.stipend-uk.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.max), 
+              na.rm=T)
+                   )
+    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Program,
+            ylim=ylimits)
+        abline(h=0)
+    boxplot(sos$Net.domestic...MBM.Threshold..2024.[which(sos$Net.Stipend > 0)] ~ sos$Program[which(sos$Net.Stipend > 0)],
+            ylim=ylimits)
+        abline(h=0)
+        
+#    boxplot({us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.
+#            }*us.to.cad,
+#            ylim=ylimits,
+#            main="US (MIT), UK")
+#    abline(h=0)
+#    abline(h=c(uk.stipend-uk.cost.of.living.min,
+#               uk.stipend-uk.cost.of.living.max),col="blue")
+        
+        
+        
+#    boxplot({us.data$Salary-us.data$MIT.Living.by.appt.term
+#            }*us.to.cad,
+#            ylim=ylimits,
+#            main="US (MIT), UK")
+#    abline(h=0)
+#    abline(h=c(uk.stipend-uk.cost.of.living.min,
+#               uk.stipend-uk.cost.of.living.max),col="blue")
+    
+        boxplot({us.data$Salary-us.data$Poverty.Line.for.appointment.term
+            }*us.to.cad,
+            ylim=ylimits,
+            main="US, UK")
+    abline(h=0)
+    abline(h=c(uk.stipend-uk.cost.of.living.min,
+               uk.stipend-uk.cost.of.living.max),col="blue")
+    
+    par(mfcol=c(1,1))
+  
+# Bio vs. Physics
+  ## Gross Stipend (Domestic) Boxplots
+    boxplot(sos$Gross.Stipend ~ sos$Example.Department,
+            ylim=c(0,max(sos$Gross.Stipend, na.rm=T)))
+    
+  ## Net Stipend (Domestic) Boxplots  
+    boxplot(sos$Net.Stipend ~ sos$Example.Department)
+    abline(h=0)
+
+  ## Vs. poverty threshold (Domestic)
+    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Example.Department)
+    abline(h=0)
+
+#Province
+  ## Gross Stipend (Domestic) Boxplots
+    boxplot(sos$Gross.Stipend ~ sos$Province,
+        ylim=c(0,max(sos$Gross.Stipend, na.rm=T)))
+    
+  ## Net Stipend (Domestic) Boxplots  
+    boxplot(sos$Net.Stipend ~ sos$Province)
+    abline(h=0)
+  ## Vs. poverty threshold (Domestic)
+    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Province)
+    abline(h=0)
+    
+    #What fraction do university's collect as fees/tuition?
+mean(sos$Total.Domestic.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend[which(sos$Net.Stipend > 0)]*100,
+     na.rm=T)
+median(sos$Total.Domestic.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend[which(sos$Net.Stipend > 0)]*100,
+     na.rm=T)
+```
+
+```{r boxplots_international}
+# PhD vs. MSc
+
+#add code here to fix the ylimits
+
+  ## Gross Stipend (Int) Boxplots
+par(mfcol=c(1,2))
+        boxplot(sos$Gross.Stipend.International ~ sos$Program,
+            ylim=c(0,max(
+              c(sos$Gross.Stipend.International,us.data$Salary,uk.stipend), 
+              na.rm=T)))
+        abline(h=c(NSERC.msc,NSERC.phd),col="red")
+
+        boxplot(us.data$Annual.guaranteed.salary*us.to.cad,
+            ylim=c(0,max(
+              c(sos$Gross.Stipend.International,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
+              na.rm=T)),
+            main="US,UK")
+    abline(h=uk.stipend,col="blue")
+    par(mfcol=c(1,1))
+  
+  ## Net Stipend (Int) Boxplots
+    par(mfcol=c(1,2))
+    boxplot(sos$Net.Stipend.Int ~ sos$Program,
+             ylim=c(
+               min(
+                c(sos$Net.Stipend.Int,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend
+                  ), 
+               na.rm=T)
+              ,max(
+                c(sos$Net.Stipend.Int,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
+                na.rm=T)
+                   )
+    )
+        boxplot(us.data$Annual.guaranteed.salary*us.to.cad,
+            ylim=c(
+               min(
+                c(sos$Net.Stipend.Int,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend
+                  ), 
+               na.rm=T)
+              ,max(
+                c(sos$Net.Stipend.Int,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
+                na.rm=T)
+                   ),
+            main="US,UK")
+    abline(h=uk.stipend,col="blue")
+        par(mfcol=c(1,1))
+  
+  ## Vs. poverty threshold (int)
+    boxplot(sos$Net.International...MBM.Threshold..2024. ~ sos$Program,
+            ylim=c(min(c(sos$Net.International...MBM.Threshold..2024.,
+                         us.stipend.min-us.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.max), 
+              na.rm=T),
+                   max(c(sos$Net.International...MBM.Threshold..2024.,
+                         us.stipend.max-us.stipend.max,
+                         uk.stipend-uk.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.max), 
+              na.rm=T)
+                   ))
+       boxplot(sos$Net.International...MBM.Threshold..2024.[which(sos$Net.Stipend > 0)] ~ sos$Program[which(sos$Net.Stipend > 0)],
+            ylim=c(min(c(sos$Net.International...MBM.Threshold..2024.,
+                         us.stipend.min-us.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.max), 
+              na.rm=T),
+                   max(c(sos$Net.International...MBM.Threshold..2024.,
+                         us.stipend.max-us.stipend.max,
+                         uk.stipend-uk.cost.of.living.min,
+                         uk.stipend-uk.cost.of.living.max), 
+              na.rm=T)
+                   ))
+    
+    
+    
+    
+    abline(h=0)
+    abline(h=c(us.stipend.max-us.cost.of.living.max,
+               us.stipend.min-us.cost.of.living.min),col="red")
+    abline(h=c(uk.stipend-uk.cost.of.living.min,
+               uk.stipend-uk.cost.of.living.max),col="blue")
+  
+# Bio vs. Physics
+  ## Gross Stipend (Domestic) Boxplots
+    boxplot(sos$Gross.Stipend ~ sos$Example.Department,
+            ylim=c(0,max(sos$Gross.Stipend, na.rm=T)))
+    
+  ## Net Stipend (Domestic) Boxplots  
+    boxplot(sos$Net.Stipend ~ sos$Example.Department)
+    abline(h=0)
+
+  ## Vs. poverty threshold (Domestic)
+    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Example.Department)
+    abline(h=0)
+
+#Province
+  ## Gross Stipend (Domestic) Boxplots
+    boxplot(sos$Gross.Stipend ~ sos$Province,
+        ylim=c(0,max(sos$Gross.Stipend, na.rm=T)))
+    
+  ## Net Stipend (Domestic) Boxplots  
+    boxplot(sos$Net.Stipend ~ sos$Province)
+    abline(h=0)
+  ## Vs. poverty threshold (Domestic)
+    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Province)
+    abline(h=0)
+
+        #What fraction do university's collect as fees/tuition?
+
+    mean(sos$Total.Int.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend.International[which(sos$Net.Stipend > 0)]*100,
+     na.rm=T)
+median(sos$Total.Int.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend.International[which(sos$Net.Stipend > 0)]*100,
+       na.rm=T)
+```
+
+
+```{r scatters}
+plot(sos$Endowment[which(sos$Program == "MSc")],
+     sos$Net.Stipend[which(sos$Program == "MSc")],
+     pch=1,
+     lwd=2,
+     cex=1.25,
+     col="dodgerblue",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
+points(sos$Endowment[which(sos$Program == "PhD")],
+     sos$Net.Stipend[which(sos$Program == "PhD")],
+     pch=16,
+     cex=.75,
+     col="firebrick2")
+cor.test(sos$Endowment,
+     sos$Net.Stipend,use="complete.obs")
+
+
+plot(sos$Operating.Grant,
+     sos$Net.Stipend,
+     pch=16,
+     col="dodgerblue",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
+points(sos$Operating.Grant[which(sos$Program == "PhD")],
+     sos$Net.Stipend[which(sos$Program == "PhD")],
+     pch=16,
+     col="firebrick2")
+cor.test(sos$Operating.Grant,
+     sos$Net.Stipend,use="complete.obs")
+
+
+plot(sos$Total.Expenses,
+     sos$Net.Stipend,
+     pch=16,
+     col="dodgerblue",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
+points(sos$Total.Expenses[which(sos$Program == "PhD")],
+     sos$Net.Stipend[which(sos$Program == "PhD")],
+     pch=16,
+     col="firebrick2")
+cor.test(sos$Total.Expenses,
+     sos$Net.Stipend,use="complete.obs")
+
+
+
+
+
+
+plot(sos$Endowment[which(sos$Example.Department == "Physics")],
+     sos$Net.Stipend[which(sos$Example.Department == "Physics")],
+     pch=16,
+     col="purple",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
+points(sos$Endowment[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     pch=15,
+     col="forestgreen")
+cor.test(sos$Endowment,
+     sos$Net.Stipend,use="complete.obs")
+
+
+plot(sos$Operating.Grant[which(sos$Example.Department == "Physics")],
+     sos$Net.Stipend[which(sos$Example.Department == "Physics")],
+     pch=16,
+     col="purple",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
+points(sos$Operating.Grant[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     pch=15,
+     col="forestgreen")
+cor.test(sos$Operating.Grant,
+     sos$Net.Stipend,use="complete.obs")
+
+
+plot(sos$Total.Expenses[which(sos$Example.Department == "Physics")],
+     sos$Net.Stipend[which(sos$Example.Department == "Physics")],
+     pch=16,
+     col="purple",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
+points(sos$Total.Expenses[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     pch=15,
+     col="forestgreen")
+cor.test(sos$Total.Expenses,
+     sos$Net.Stipend,use="complete.obs")
+
+
+# Vs. post MBM
+
+plot(sos$Endowment[which(sos$Program == "MSc")],
+     sos$Net.domestic...MBM.Threshold..2024.[which(sos$Program == "MSc")],
+     pch=1,
+     lwd=2,
+     cex=1.25,
+     col="dodgerblue",
+     ylim=c(min(sos$Net.domestic...MBM.Threshold..2024.,na.rm=T),0),
+     main="Endowment vs. poverty line")
+points(sos$Endowment[which(sos$Program == "PhD")],
+     sos$Net.domestic...MBM.Threshold..2024.[which(sos$Program == "PhD")],
+     pch=16,
+     cex=.75,
+     col="firebrick2")
+#points(sos$Endowment[which(sos$University == "Victoria")],
+#     sos$Net.domestic...MBM.Threshold..2024.[which(sos$University == "Victoria")],
+#     pch=16,
+#     cex=1,
+#     col="green")
+cor.test(sos$Endowment,
+     sos$Net.domestic...MBM.Threshold..2024.,use="complete.obs")
+
+
+plot(sos$Operating.Grant,
+     sos$Net.Stipend,
+     pch=16,
+     col="dodgerblue",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
+points(sos$Operating.Grant[which(sos$Program == "PhD")],
+     sos$Net.Stipend[which(sos$Program == "PhD")],
+     pch=16,
+     col="firebrick2")
+cor.test(sos$Operating.Grant,
+     sos$Net.Stipend,use="complete.obs")
+
+
+plot(sos$Total.Expenses,
+     sos$Net.Stipend,
+     pch=16,
+     col="dodgerblue",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
+points(sos$Total.Expenses[which(sos$Program == "PhD")],
+     sos$Net.Stipend[which(sos$Program == "PhD")],
+     pch=16,
+     col="firebrick2")
+cor.test(sos$Total.Expenses,
+     sos$Net.Stipend,use="complete.obs")
+
+```

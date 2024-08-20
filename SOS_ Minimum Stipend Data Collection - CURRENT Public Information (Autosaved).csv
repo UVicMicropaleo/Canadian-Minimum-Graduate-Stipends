@@ -1,0 +1,634 @@
+University,Province,City,Tri-Council,Example Department,Faculty,Department,Program,Website,Contact Emails,,Emailed to Obtain,Emailed to Confirm,Domestic Tuition,Ancillary Fees,Total Domestic Fees,OOP Tuition,OOP Waiver,International Tuition,Int Ancillary Fees,Total Int Fees,Int Waiver,Guaranteed Funding,Years Guaranteed,Gross Stipend,Net Stipend,Gross Stipend International,Net Stipend Int,Gross Stipend OOP,Net Stipend OOP,Hours TAing,Hours RAing,Date of collection,Academic Year of Stipend,Tuition Get / 2,Tuition Parse / 2,Stipend Get / 3,Stipend Complete / 3,Notes,Tuition Data,Stipend Data,MBM Threshold 2020,MBM Threshold 2024,Rental Costs,Rental costs per year,Notes on Thresholds ,Net domestic - MBM Threshold (2024) ,Net domestic - MBM Threshold - Rent/year,Net domestic - MBM Threshold - Rent/year w/ 3 roommates (split 4 ways),Total Expenses,Operating Grant,Endowment
+Simon Fraser University,BC,Burnaby,NSERC,Biological Sciences - Ecology,Science,Biological Sciences,MSc,https://www.sfu.ca/biology/graduate.html,Department Chair: biscchr@sfu.ca,Grad Program Assistant: biscgrad@sfu.ca,FALSE,FALSE,6198.33,2005.44,8203.77,,,6198.33,2286.44,8484.77,,Yes,2,28000,19796.23,28000,19515.23,,,Up to 336,0,45350,2023-24,2,1.5,3,3,"Winning scholarships do not increase minimum stipend level, no international tuition",https://www.sfu.ca/gradstudies/apply/tuition-and-fees/tuition-types.html,https://www.sfu.ca/biology/graduate/current/financial/funding-policy.html,24482,28974.28,2545,30540,"Located in Burnaby, population 249,197. thus classified as a large population center",-9178.05,-39718.05,-16813.05,873,296,486
+,,,,,,,PhD,,,,FALSE,FALSE,6198.33,2005.44,8203.77,,,6198.33,2286.44,8484.77,,Yes,4,28000,19796.23,28000,19515.23,,,Up to 336,0,45350,2023-24,2,1.5,3,3,,,,,,,30540,* Inflation calculator is from Bank of Canada: https://www.bankofcanada.ca/rates/related/inflation-calculator/,-9178.05,-39718.05,-16813.05,873,296,486
+,,,NSERC,Physics,Science,Physics,MSc,https://www.sfu.ca/physics/graduate.html,Department Chair: physchr@sfu.ca,Grad Program Assistant: physgrad@sfu.ca,FALSE,FALSE,6198.33,2005.44,8203.77,,,6198.33,2286.44,8484.77,,Yes,2,27000,18796.23,27000,18515,,,Up to 434,0,45350,2023-24,2,2,3,3,Scholarships are topped up,https://www.sfu.ca/students/calendar/2023/fall/fees-and-regulations/tuition-fees/graduate.html,https://www.sfu.ca/physics/graduate/prospective/financial-support.html,,,,30540,,-10178.05,-40718.05,-17813.05,873,296,486
+,,,,,,,PhD,,,,FALSE,FALSE,6198.33,2005.44,8203.77,,,6198.33,2286.44,8484.77,,Yes,4,29500,21296.23,29500,21015,,,Up to 343,0,45350,2023-24,2,2,3,3,,,,,,,30540,,-7678.05,-38218.05,-15313.05,873,296,486
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,Molecular Biology and Biochemistry,MSc,https://www.sfu.ca/mbb/graduate/prospective.html,"Lisa Craig, Department Chair: licraig@sfu.ca","Jamie Chen, Graduate Program Assistant: mbb@sfu.ca",FALSE,FALSE,6198.33,2005.44,8203.77,,,6198.33,2286.44,8484.77,,Yes,,27000,18796.23,27000,18515.23,,,0,yes,45412,2023-24,1,1.5,3,0,,https://www.sfu.ca/gradstudies/apply/tuition-and-fees/tuition-types.html,https://www.sfu.ca/mbb/graduate/prospective/financial-aid.html,,,,,,,,,,,
+,,,,,,,PhD,https://www.sfu.ca/mbb/graduate/prospective.html,,,FALSE,FALSE,6198.33,2004.44,8202.77,,,6198.33,2286.44,8484.77,,Yes,,29000,20797,29000,20515,,,0,yes,45412,2023-24,1,1.5,3,0,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Calgary,AB,Calgary,NSERC,Biological Sciences - Ecology,Science,Biological Sciences,MSc,https://grad.ucalgary.ca/future-students/explore-programs/biological-sciences-msc-thesis,sci.grad@ucalgary.ca,Graduate Program Administrator,TRUE,FALSE,3603.96,1997.42,5601.38,,,8407.53,,8407.53,,,,,,,,,,,,,,0,1.5,0,0,,https://calendar.ucalgary.ca/pages/bdf3d650a14247e4912def1671b7ba09,,25112,29719.88,1733,20796,,-29719.88,-50515.88,-34918.88,1509,601,1176
+,,,,,,,PhD,https://grad.ucalgary.ca/future-students/explore-programs/biological-sciences-phd ,sci.grad@ucalgary.ca,Graduate Program Administrator,TRUE,FALSE,3603.96,1997.42,5601.38,,,8404.53,,8404.53,,,,,,,,,,,,,,0,1.5,0,0,,https://calendar.ucalgary.ca/pages/bdf3d650a14247e4912def1671b7ba09,,,,1733,20796,,-29719.88,-50515.88,-34918.88,1509,601,1176
+,,,NSERC,Physics,Science,Physics and Astronomy,MSc,,,,TRUE,FALSE,3603.96,1997.42,5601.38,,,8407.53,,8407.53,,,,,,,,,,,,,,0,1.5,0,0,,https://calendar.ucalgary.ca/pages/bdf3d650a14247e4912def1671b7ba09,,,,1733,20796,,-29719.88,-50515.88,-34918.88,1509,601,1176
+,,,,,,,PhD,,sci.grad@ucalgary.ca,,TRUE,FALSE,3603.96,1997.42,5601.38,,,8407.53,,8407.53,,,,,,,,,,,,,,0,1.5,0,0,,https://calendar.ucalgary.ca/pages/bdf3d650a14247e4912def1671b7ba09,,,,1733,20796,,-29719.88,-50515.88,-34918.88,1509,601,1176
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,Biochemistry & Molecular Biology,MSc,https://cumming.ucalgary.ca/departments/bmb/graduate-studies,Graduate Program Adminstrator: bmbgrad@ucalgary.ca,,FALSE,FALSE,3603.96,1997.42,5601.38,,,8407.53,,8407.53,,Yes,,25000,19398.62,26000,17592.47,,,,,,2023-24,0,1.5,3,1,,https://calendar.ucalgary.ca/pages/bdf3d650a14247e4912def1671b7ba09,https://cumming.ucalgary.ca/departments/bmb/graduate-studies,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,3603.96,1997.42,5601.38,,,8404.53,,8404.53,,Yes,,27000,21399,28000,19595,,,,,,2023-24,0,1.5,3,1,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Alberta,AB,Edmonton,NSERC,Biological Sciences - Ecology,Science,Biological Sciences,MSc,https://www.ualberta.ca/biological-sciences/graduate-studies/index.html,"Schelly Scott, Bio Grad Finances: biogradf@ualberta.ca",,FALSE,FALSE,4732.8,2697.09,7429.89,,,9406,2697.09,12103.09,,Yes,2.3,25197,17767.11,,13093.91,,,Half of students suppported by TAing,,45351,,1,2,3,0,Governed by collective agreement,https://www.ualberta.ca/graduate-studies/prospective-students/tuition-and-cost-of-living-estimate.html,https://www.ualberta.ca/biological-sciences/graduate-studies/for-applicants/program-funding.html,24862,29424,1367,16404,located in Edmonton,-11656.89,-28060.89,-15757.89,1878,756,1728
+,,,,,,,PhD,,,,FALSE,FALSE,4732.8,2697.09,7429.89,,,9406,2697.09,12103.09,,Yes,5,25917,18487.11,,13813.91,,,,,45351,,1,2,3,0,,,,,,1367,16404,,-10936.89,-27340.89,-15037.89,1878,756,1728
+,,,NSERC,Physics,Science,Physics and Geophysics,MSc,https://www.ualberta.ca/physics/graduate-studies/index.html,,,FALSE,FALSE,4732.8,2697.09,7429.89,,,9406,2697.09,12103.09,,Yes,2,29010,21580,,16907,,,12hr/week,,45351,,1,2,3,1,,,https://www.ualberta.ca/physics/graduate-studies/awards-and-funding/financial-support-for-new-msc-students.html,,,1367,16404,,-7843.89,-24247.89,-11944.89,1878,756,1728
+,,,,,,,PhD,,,,FALSE,FALSE,4732.8,2697.09,7429.89,,,9406,2697.09,12103.09,,Yes,45387,30720,23290,,18617,,,12hr/week,,45351,,1,2,3,1,,,https://www.ualberta.ca/physics/graduate-studies/awards-and-funding/financial-support-for-new-phd-students.html,,,1367,16404,,-6133.89,-22537.89,-10234.89,1878,756,1728
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lethbridge,AB,Lethbridge,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,TRUE,FALSE,6270.33,2415.17,8685.5,,,14208.24,2415.17,16623.41,,,,,,,,,,,,,,,,,,,,,23640,27977.77,,,"located in Lethbridge, Alberta. population 106550. Large population center",-27977.77,-27977.77,-27977.77,209,108,95
+,,,,,,,PhD,,,,TRUE,FALSE,6129.36,2415.17,8544.53,,,14208.24,2415.17,16623.41,,,,,,,,,,,,,,,,,,,,,,,,,,-27977.77,-27977.77,-27977.77,,,
+,,,NSERC,Physics,Science,Department of Physics & Astronomy,MSc,https://www.ulethbridge.ca/artsci/physics-astronomy,,,TRUE,FALSE,6270.33,2415.17,8685.5,,,14208.24,2415.17,16623.41,,,,,,,,,,,,,,,,,,"AF: The request for info predates me taking over the physics data. I agree, I can't find the info without aid from somebody at UL, but don't want to request email a second time if they recieved a response with ""No""",,,,,,,,-27977.77,-27977.77,-27977.77,,,
+,,,,,,,PhD,https://www.ulethbridge.ca/artsci/physics-astronomy,,,TRUE,FALSE,6129.36,2415.17,8544.53,,,14208.24,2415.17,16623.41,,,,,,,,,,,,,,,,,,,,,,,,,,-27977.77,-27977.77,-27977.77,,,
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Thompson Rivers,BC,Kelowna,NSERC,Biological Sciences - Ecology,Science,Department of Biological Sciences,MSc,https://www.tru.ca/science/programs/msces.html,hmcintyre@tru.ca,"Heather McIntyre, Program Asistant (incl. MSc Environmental Science)",TRUE,FALSE,7125,503.82,20697.66,,,20193.84,503.82,20697.66,,,,,,,,,,,,45411,,2,1.5,,,"AW: Ancillary fees itemized, good for transparency but no total value given so difficult to sum. I calculated fees on the assumption of them being charged for 2 semesters per year. No sitpend data visible on website. ",https://www.tru.ca/science/programs/msces/tuition.html,,22255,26338.64,,,"located in Kamloops, BC 90,280 pop. Medium population center",-26338.64,-26338.64,-26338.64,247,94,14
+,,,,,,,PhD,No Graduate Program,,,TRUE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,No program ,,,,,,,,-26338.64,-26338.64,-26338.64,247,94,14
+,,,NSERC,Physics,Science,Physical Science,MSc,No Graduate Program,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,45379,,,,,,AF: No program,,,,,,,,-26338.64,-26338.64,-26338.64,247,94,14
+,,,,,,,PhD,No Graduate Program,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-26338.64,-26338.64,-26338.64,247,94,14
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+UNBC,BC,Prince George,NSERC,Biological Sciences - Ecology,Science,"No departments. MSc and PhD in ""Natural Resources and Environmental Studies (NRES)""",MSc,https://www2.unbc.ca/nres-graduate-program,fe.grad@unbc.ca,NRES Grad team,TRUE,FALSE,5460.42,681.93,6142.35,,,7644.6,871.93,8516.53,,,,,,,,,,,,45411,,1,1,,,"AW: This is the first institution I've seen have a statement on an awards ceiling: ""Currently the Graduate award ceiling is $15,000 per academic year (this does not include external awards)."" No minimum stipend appears to exist for these programs. Fees are itemized, like Thompson Rivers. Good for transparency, difficult to sum. ""All graduate student fees are mandatory and cannot be waived.""",https://www2.unbc.ca/finance/accounts-receivable/fees-unbc#domestic-graduate,,22255,26338.64,,,"Prince George BC 74,003 population Medium population Center",-26338.64,-26338.64,-26338.64,132,66,72
+,,,,,,,PhD,https://www2.unbc.ca/nres-graduate-program,fe.grad@unbc.ca,NRES Grad team,TRUE,FALSE,0,681.93,681.93,,,,,0,,,,,,,,,,,,,,,,,,AW: PhD candidates receive an automatic four year tuition grant; so I put $0 for PhD tuition. This information is stated on this page: https://www2.unbc.ca/nres-graduate-program,,,,,,,,-26338.64,-26338.64,-26338.64,132,66,72
+,,,NSERC,Physics,Science,Department of Physics,MSc,https://www2.unbc.ca/physics,,,TRUE,FALSE,5460.42,2841.87,8302.29,,,7644.6,2841.87,10486.47,,,,,,,,,,,,45379,,0,1,0,0,"AF: Had to email to get info. No info on graduate program on dept website, had to go to Univ. website (nightmare) to get data",https://www2.unbc.ca/sites/default/files/sections/finance/accounts-receivable/studentfees-grad_13.pdft,,,,,,,-26338.64,-26338.64,-26338.64,132,66,72
+,,,,,,,PhD,No program,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,https://www2.unbc.ca/finance/accounts-receivable/fees-unbc#domestic-graduate,,,,,,,-26338.64,-26338.64,-26338.64,132,66,72
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+UBC,BC,Vancouver,NSERC,Biological Sciences - Ecology,Science,"Potentially across several departments including Botany, Zoology, Forestry, Biodiversity Research Centre. Using grad programs in Zoology here. ",MSc,https://zoology.ubc.ca/graduate-program,mimi.yu@ubc.ca,"Mimi Yu, Graduate Program Manager",TRUE,FALSE,5515.71,1313.7,6829.41,,,9690.18,1313.7,11003.88,,Yes,"""as long as they make satisfactory progress in their program""",30000,23170.59,30000,28686.3,,,,,45411,2023/2024,,,3,,AW: Ancillary fees itemized but on separate pages depnding if they are approved by UBC Board of Governors or Student Societ https://vancouver.calendar.ubc.ca/fees/student-fees ,,TAing requirements depends on funding arrangement with supervisor,25285,29924.62,2671,32052,Vancouver,-6754.03,-38806.03,-14767.03,3281,1447,2800
+,,,,,,,PhD,https://zoology.ubc.ca/graduate-program,mimi.yu@ubc.ca,"Mimi Yu, Graduate Program Manager",TRUE,FALSE,5515.71,1313.7,6829.41,,,9690.18,1313.7,11003.88,,Yes,"""as long as they make satisfactory progress in their program""",30000,23170.59,30000,28686.3,,,,,45411,2023/2024,,,3,,AW: Ancillary fees itemized but on separate pages depnding if they are approved by UBC Board of Governors or Student Societ https://vancouver.calendar.ubc.ca/fees/student-fees ,,TAing requirements depends on funding arrangement with supervisor,,,2671,32052,,-6754.03,-38806.03,-14767.03,3281,1447,2800
+,,,NSERC,Physics,Science,Department of Physics & Astronomy,MSc,https://phas.ubc.ca/,Dr. Alison Lister,gradadvr@phas.ubc.ca,FALSE,FALSE,5301,1202,6503,,,9313.92,1202,10515.92,3200,Yes,2,28278,21775,28278,20962,,,288,,45379,2023/2024,2,2,3,3,AF: I'm going to mail this website to our graduate supervisor as an example of a great solution to the confusion we frequently see. This is how it should be done.,https://phas.ubc.ca/graduate-program-financial-support,https://phas.ubc.ca/graduate-program-financial-support,,,2671,32052,,-8149.62,-40201.62,-16162.62,3281,1447,2800
+,,,,,,,PhD,,,,FALSE,FALSE,5301,1202,6503,,,9313.92,1202,10515.92,3200,Yes,4,33878,27375,33878,26562,,,288,,45379,2023/2024,2,2,3,3,,,,,,,,,-2549.62,,,3281,1447,2800
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Victoria,BC,Victoria,NSERC,Biological Sciences - Ecology,Science,Department of Biology,MSc,https://www.uvic.ca/science/biology/graduate/program/index.php,biology@uvic.ca,Jennie Bartosik,TRUE,FALSE,6403.62,1356.88,7760.5,,,8076.9,1356.88,9433.78,,Yes,2,22000,14239.5,22000,12566.22,,,,,45411,2023/2024,0,1,3,2,"AW: No guaranteed minimum, but UVic Fellowships are valued at $17,500 per year (MSc) and $20,000 per year (PhD)",,"The 2024-5 tuition years are posted on the website at the time of data collection. I emailed the program to request 2023-4 stipend data (22k per year). The stipend will be raised to 26,000 this coming academic year. ",22255 OR 24482,26338.64 OR 28974.28,2168,26016,"Technically, victoria only has 92,141 pop, making it a medium population center. However, Saanich is directly to the north, and is talking about merging (along with all the other cities here). I'm going to make this have 2 categories, but we should talk about that. data to the right considered just the lower of the two numbers",-12099.14,-38115.14,-18603.14,691,216,523
+,,,,,,,PhD,https://www.uvic.ca/science/biology/graduate/program/index.php,biology@uvic.ca,Jennie Bartosik,TRUE,FALSE,6403.62,1356.88,7760.5,,,8076.9,1356.88,9433.78,,Yes,4,22000,14239.5,22000,12566.22,,,,,45411,2023/2024,0,1,3,2,"AW: No guaranteed minimum, but UVic Fellowships are valued at $17,500 per year (MSc) and $20,000 per year (PhD)",,"The 2024-5 tuition years are posted on the website at the time of data collection. I emailed the program to request 2023-4 stipend data (22k per year). The stipend will be raised to 26,000 this coming academic year. ",,,2168,26016,,-12099.14,-38115.14,-18603.14,691,216,523
+,,,NSERC,Physics,Science,Department of Physics & Astronomy,MSc,https://www.uvic.ca/science/physics/,Pavel Kovtun,pkovtun@uvic.ca,FALSE,FALSE,6405,1372.48,7777.48,,,8076,1372.48,9448.48,,Yes,2*,24967,17190,24967,15519,,,100,,45379,2023/2024,0,0.5,1,2,"The guaranteed support levels will be in effect for 2 years for a student in an MSc program, up to 5 years beyond the BSc level for a student in a PhD transfer program, 3 years for a student in a PhD program, and 4 years for a PhD student who arrives at UVic with an MSc from another university. There is no Graduate Award beyond these time limits. Arrangements for RA contributions after the time limits are between the student and supervisor.",,,,,2168,26016,,-9149.12,-35165.12,-15653.12,691,216,523
+,,,,,,,PhD,,,,FALSE,FALSE,6405,1372.48,7777.48,,,8076,1372.48,9448.48,,Yes,4*,26867,19090,26867,17419,,,100,,45379,2023/2024,0,0.5,1,2,"It's a really good break down, but takes a while to find it! I had to find the grad handbook, which then took me back to the dept website. Might be because i was on a tablet, but still!",,,,,2168,26016,,-7249.12,-33265.12,-13753.12,691,216,523
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Manitoba,MB,Winnipeg,NSERC,Biological Sciences - Ecology,Science,Department of Biological Sciences,MSc,https://umanitoba.ca/explore/programs-of-study/biological-sciences-msc,biograd@umanitoba.ca,Program inquiries,TRUE,FALSE,8860.32,1673.37,10533.69,,,19492.86,3049.37,22542.23,,,,,,,,,,,,45411,,,,,,,,,22714,26881.86,1416,16992,Winnipeg,-26881.86,-43873.86,-31129.86,959,424,936
+,,,,,,,PhD,https://umanitoba.ca/explore/programs-of-study/biological-sciences-phd,biograd@umanitoba.ca,Program inquiries,TRUE,FALSE,8860.32,1673.37,10533.69,,,8860.32,3049.37,11909.69,,,,,,,,,,,,45411,,,,,,,,,,,1416,16992,,-26881.86,-43873.86,-31129.86,959,424,936
+,,,NSERC,Physics,Science,Physics & Astronomy,MSc,https://umanitoba.ca/explore/programs-of-study/physics-msc,Gerald Gwinner,Gerald.Gwinner@umanitoba.ca,FALSE,FALSE,6459.88,1701.37,8161.25,,,13548.24,3077.37,16625.61,,Yes,,22650,14489,22650,6024,,,0,,45379,2023/2024,0,0.5,1,1,,https://umanitoba.ca/registrar/tuition-fees/graduate,https://umanitoba.ca/science/student-experience/financial-aid-awards/physics-and-astronomy,,,1416,16992,,-12393.11,-29385.11,-16641.11,959,424,936
+,,,,,,,PhD,None,,,FALSE,FALSE,6459.88,1701.37,8161.25,,,6459.88,3077.37,9537.25,,Yes,,24000,15839,24000,14463,,,0,,45379,2023/2024,0,0.5,1,1,,https://umanitoba.ca/registrar/tuition-fees/graduate,https://umanitoba.ca/science/student-experience/financial-aid-awards/physics-and-astronomy,,,1416,16992,,-11043.11,-28035.11,-15291.11,959,424,936
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+New Brunswick,NB,Fredericton,NSERC,Biological Sciences - Ecology,Science,Department of Biology,MSc,https://www.unb.ca/fredericton/science/depts/biology/graduate/index.html,biodogs@unb.ca,"Shawn MacLellan, Director of Graduate Studies",TRUE,FALSE,,,0,,,,,0,,Yes,2,13500,,,,,,2 units - emailed to clarify,,45411,Emailed for 2023-24 (24-25 posted),1,1.5,3,0,"AW: Funding is ""subject to availability"", so maybe not actually guaranteed. Howeer, the assistance is the base amount of $13500 plus tuition and incidental fees, reflected in the formula in this row. Tuition posted is for 2024-25 academic year, so I have emailed to request 2023-24 data. ",https://www.unb.ca/finance/financial-services/graduate/index.html,,22606,26754.04,,,"Fredericton, NB",-26754.04,-26754.04,-26754.04,354,128,238
+,,,,,,,PhD,https://www.unb.ca/fredericton/science/depts/biology/graduate/index.html,biodogs@unb.ca,"Shawn MacLellan, Director of Graduate Studies",TRUE,FALSE,,,0,,,,,0,,Yes,4,13500,,,,,,2 units - emailed to clarify,,45411,Emailed for 2023-24 (24-25 posted),1,1.5,3,0,"AW: Funding is ""subject to availability"", so maybe not actually guaranteed. Howeer, the assistance is the base amount of $13500 plus tuition and incidental fees, reflected in the formula in this row. Tuition posted is for 2024-25 academic year, so I have emailed to request 2023-24 data. ",https://www.unb.ca/finance/financial-services/graduate/index.html,,,,,,,-26754.04,-26754.04,-26754.04,354,128,238
+,,,NSERC,Physics,Science,Department of Physics,MSc,,,,FALSE,FALSE,8001,1568.5,9569.5,,,14325,2233.1,16558.1,,Yes,2,16000,6431,16000,-558,,,,,45379,Not specified,1,1.5,3,0,,https://www.unb.ca/finance/_assets/documents/financial-services/new/fred_gr_research_ft_new.pdf,https://www.unb.ca/fredericton/science/depts/physics/graduate/funding.html,,,,,,-20323.54,-20323.54,-20323.54,354,128,238
+,,,,,,,PhD,,,,FALSE,FALSE,8001,1568.5,9569.5,,,14325,2233.1,16558.1,,Yes,4,17000,7431,17000,442,,,,,45379,Not specified,1,1.5,3,0,,https://www.unb.ca/finance/_assets/documents/financial-services/new/fred_gr_research_ft_new.pdf,https://www.unb.ca/fredericton/science/depts/physics/graduate/funding.html,,,,,,-19323.54,-19323.54,-19323.54,354,128,238
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Memorial,NL,St. John's,NSERC,Biological Sciences - Ecology,Science,Department of Biology,MSc,https://www.mun.ca/become/graduate/programs-and-courses/biology/,biogradsec@mun.ca,,FALSE,FALSE,2859,834,3693,3717,,4833,901,5734,,Yes,2,17500,13807,17500,11766,17500,12949,,,45448,2023/2024,1,1,1,1,,https://www.mun.ca/become/graduate/programs-and-courses/biology/,,21477,25417.88,955,11460,"St. Johns, NL ",-11610.88,-23070.88,-14475.88,661,406,159
+,,,,,,,PhD,https://www.mun.ca/become/graduate/programs-and-courses/biology/,biogradsec@mun.ca,,FALSE,FALSE,2664,834,3498,3462,,4497,901,5398,,Yes,4,19000,15502,19000,13602,19000,14704,,,45448,2023/2024,1,1,1,1,,https://www.mun.ca/become/graduate/programs-and-courses/biology/,,,,955,11460,,-9915.88,-21375.88,-12780.88,661,406,159
+,,,NSERC,Physics,Science,Physics and Physical Oceanography,MSc,https://www.mun.ca/physics/,Physics-GO@mun.ca,,FALSE,FALSE,2859,834,3693,3717,,4833,901,5734,,Yes,2,20466,16773,20866,15132,,15915,?,,45379,2023/2024,1,1,3,1,"AF: There's two sets of numbers on the website, one from 4 years ago. I grabbed the ones which are listed under the ""current"" student page, but the basic financial tab on the website is out of date.",https://www.mun.ca/finance/graduate-student-tuition-and-fees/,https://www.mun.ca/physics/graduate-students/graduate-scholarships-and-fellowships/,,,955,11460,,-8644.88,-20104.88,-11509.88,661,406,159
+,,,,,,,PhD,https://www.mun.ca/physics/,,,FALSE,FALSE,2664,834,3498,3462,,4497,901,5398,,Yes,4,22066,18568,22066,16668,,17770,?,,45379,2023/2024,1,1,3,1,"AF: One Graduate tuition was done incorrectly initially (by me, whoops), so i have updated as of 24-5-24. They have an odd way of presenting the graduate pay, which seems nice but is actually not. They provide a Program fee, great for an MSc, but their idea of a PhD is 3 years.",https://www.mun.ca/undergrad/money-matters/,https://www.mun.ca/physics/graduate-students/graduate-scholarships-and-fellowships/,,,955,11460,,-6849.88,-18309.88,-9714.88,661,406,159
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Dalhousie,NS,Halifax,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,23264,27532.78,1925,23100,"Halifax, NS",-27532.78,-50632.78,-33307.78,825,229,681
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1925,23100,,-27532.78,-50632.78,-33307.78,825,229,681
+,,,NSERC,Physics,Science,Physics & Atmospheric Science,MSc,https://www.dal.ca/faculty/science/physics/programs/GraduateStudents.html,,,FALSE,FALSE,10864,2127.99,12991.99,,,18630,2868.73,21498.73,,No,,,,,,,,,,45394,,0,0,2,0,The tuition tables are horribly complictated (and maybe even misslabeled?) ,https://cdn.dal.ca/content/dam/dalhousie/pdf/admissions/MoneyMatters/Grad%202024-2025.pdf?_gl=1*z066q9*_ga*MjMwMzg4MDIxLjE3MTI5NTQ5NjM.*_ga_H7TPVP0V0F*MTcxMjk1NTE4OS4xLjAuMTcxMjk1NTE4OS4wLjAuMA..,https://cdn.dal.ca/content/dam/dalhousie/pdf/academics/Graduate%20programs/Medical%20Physics/Grad%20Student%20Handbook-2020-2021.pdf,,,1925,23100,,-27532.78,-50632.78,-33307.78,825,229,681
+,,,,,,,PhD,,,,FALSE,FALSE,7053,2127.99,9180.99,,,7053,2868.73,9921.73,,No,,,,,,,,,,45394,,0,0,2,0,"For Dalhousie there is a ""Departmental funding would normally be provided for two years to an MSc student
+and four years to a PhD student."", but because it's just - normally- there's no minimum. Sourced from graduate handbook",https://cdn.dal.ca/content/dam/dalhousie/pdf/admissions/MoneyMatters/PhD%202024-2025.pdf?_gl=1*c4mk7s*_ga*MjMwMzg4MDIxLjE3MTI5NTQ5NjM.*_ga_H7TPVP0V0F*MTcxMjk1NTE4OS4xLjAuMTcxMjk1NTE5My4wLjAuMA..,https://cdn.dal.ca/content/dam/dalhousie/pdf/academics/Graduate%20programs/Medical%20Physics/Grad%20Student%20Handbook-2020-2021.pdf,,,1925,23100,,-27532.78,-50632.78,-33307.78,825,229,681
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Guelph,ON,Guelph,NSERC,Biological Sciences - Ecology,Science,Department of Integrative Biology,MSc,https://www.uoguelph.ca/ib/grad_program_overview,,,FALSE,FALSE,4755.06,1484.24,6239.3,,,13675.08,2240.24,15915.32,,Yes,2,21460,15220.7,21460,5544.68,,,140,,45338,2022,2,1.5,2,2,International students pay additional health fee.,https://uoguelphca-my.sharepoint.com/:x:/g/personal/sfscomm_uoguelph_ca/Ec8jBdQ56m5Bih3a_8GAN9MBG2nJQnKyyqGOxTfoU_Gm4A?e=h1Htrn&activeCell=%272023%27!A1&action=embedview (Domestic) https://uoguelphca-my.sharepoint.com/:x:/g/personal/sfscomm_uoguelph_ca/ES-kzd15FPhDu-DFiIjzxVAB27VJh9m1yixTjaqq7dYQcg?e=fYm962&activeCell=%272023%27!A1&action=embedview (international),https://adr-cbs.uoguelph.ca/system/files/CBS%20%20Minimum%20Stipends%20MASTER%20FILE%20MSC%20August%2022%2C%202023.pdf,22170,26238.04,2053,24636,"Guelph Ont, 135,474 population",-11017.34,-35653.34,-17176.34,912,280,445
+,,,,,,,PhD,https://www.uoguelph.ca/ib/grad_program_overview,,,FALSE,FALSE,4661.38,1484.24,6145.62,,,13120.54,2240.24,15360.78,,Yes,4,25460,19314.38,25460,10099.22,,,140,,45338,2022,2,1.5,2,2,International students pay additional health fee.,https://uoguelphca-my.sharepoint.com/:x:/g/personal/sfscomm_uoguelph_ca/Ec8jBdQ56m5Bih3a_8GAN9MBG2nJQnKyyqGOxTfoU_Gm4A?e=h1Htrn&activeCell=%272023%27!A1&action=embedview (Domestic) https://uoguelphca-my.sharepoint.com/:x:/g/personal/sfscomm_uoguelph_ca/ES-kzd15FPhDu-DFiIjzxVAB27VJh9m1yixTjaqq7dYQcg?e=fYm962&activeCell=%272023%27!A1&action=embedview (international),https://adr-cbs.uoguelph.ca/system/files/CBS%20%20Minimum%20Stipends%20MASTER%20FILE%20PhD%20August%2022%2C%202023.pdf,,,2053,24636,,-6923.66,-31559.66,-13082.66,912,280,445
+,,,NSERC,Physics,Science,Physics,MSc,https://www.physics.uoguelph.ca/,epoisson@uoguelph.ca,Grad Program Coordinator,TRUE,FALSE,4755.06,1484.24,6239.3,,,13675.08,2240.24,15915.32,,Yes,2,28377,22138,37297,21382,,,140,,,,1,2,0,0,"Tried on 2024-2-16 to get information about the minimum stipend, but cannot find it on the website. ""For international students, the GRA amount is increased to cover the tuitional differential. """,https://uoguelphca-my.sharepoint.com/:x:/g/personal/sfscomm_uoguelph_ca/Ec8jBdQ56m5Bih3a_8GAN9MBG2nJQnKyyqGOxTfoU_Gm4A?e=h1Htrn&activeCell=%272023%27!A1&action=embedview (Domestic) https://uoguelphca-my.sharepoint.com/:x:/g/personal/sfscomm_uoguelph_ca/ES-kzd15FPhDu-DFiIjzxVAB27VJh9m1yixTjaqq7dYQcg?e=fYm962&activeCell=%272023%27!A1&action=embedview (international),,,,2053,24636,,-4100.42,-28736.42,-10259.42,912,280,445
+,,,,,,,PhD,https://www.physics.uoguelph.ca/,epoisson@uoguelph.ca,Grad Program Coordinator,TRUE,FALSE,4661.38,1484.24,6145.62,,,13120.54,2240.24,15360.78,,Yes,4,30602,24456,39061,23700,,,140,,,,1,2,0,0,"Tried on 2024-2-16 to get information about the minimum stipend, but cannot find it on the website.",https://uoguelphca-my.sharepoint.com/:x:/g/personal/sfscomm_uoguelph_ca/Ec8jBdQ56m5Bih3a_8GAN9MBG2nJQnKyyqGOxTfoU_Gm4A?e=h1Htrn&activeCell=%272023%27!A1&action=embedview (Domestic) https://uoguelphca-my.sharepoint.com/:x:/g/personal/sfscomm_uoguelph_ca/ES-kzd15FPhDu-DFiIjzxVAB27VJh9m1yixTjaqq7dYQcg?e=fYm962&activeCell=%272023%27!A1&action=embedview (international),,,,2053,24636,,-1781.74,-26417.74,-7940.74,912,280,445
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+McMaster,ON,Hamilton,NSERC,Biological Sciences - Ecology,Science,Department of Biology,MSc,https://gs.mcmaster.ca/program/biology/,,,FALSE,FALSE,2102.4,1090.66,3193.06,,,5698.74,1090.66,6789.4,,,2,27339,24145.94,27339,20549.6,,,,,,,1,1,2,1,"Somewhat unclear on if TAs are required or not. There's discussion of ""If a teaching assistantship is not available, the student may be supported by other sources depending on the availability of funds."" this seems to imply that a TA is required and if not given to student they might not meet a minimum? ",https://registrar.mcmaster.ca/fees/graduate/#tab-00,https://biology.mcmaster.ca/graduate/grad-guide/,22472,26595.45,1806,21672,hamilton,-2449.51,-24121.51,-7867.51,1256,284,909
+,,,,,,,PhD,https://gs.mcmaster.ca/program/biology/,,,FALSE,FALSE,2102.4,1090.66,3193.06,,,2102.4,1090.66,3193.06,,,4,30327,27133.94,30327,27133.94,,,,,,,1,1,2,1,,https://registrar.mcmaster.ca/fees/graduate/#tab-00,https://biology.mcmaster.ca/graduate/grad-guide/,,,1806,21672,,538.49,-21133.51,-4879.51,1256,284,909
+,,,NSERC,Physics,Science,Physics and Astronomy,MSc,https://physics.mcmaster.ca/,,,TRUE,FALSE,2102.4,1090.66,3193.06,,,5698.74,1090.66,6789.4,,yes,,,,,,,,,,,,,,,,,,,,,1806,21672,,-26595.45,-48267.45,-32013.45,1256,284,909
+,,,,,,,PhD,https://physics.mcmaster.ca/,,,TRUE,FALSE,2102.4,1090.66,3193.06,,,2102.4,1090.66,3193.06,,yes,,,,,,,,,,,,,,,,,,,,,1806,21672,,-26595.45,-48267.45,-32013.45,1256,284,909
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Queen's,ON,Kingston,NSERC,Biological Sciences - Ecology,Science,Biology Department,MSc,https://biology.queensu.ca/,,,FALSE,FALSE,5772.99,1482.8,7255.79,,,12927.45,2238.8,15166.25,,Yes,2,24300,17044.21,,9133.75,,,,,,2022-2023,1,1.5,2,2,,https://www.queensu.ca/registrar/tuition-fees/graduate,https://biology.queensu.ca/default/assets/File/Biology%20Guide%20to%20Graduate%20Studies%20Jan%202024%20for%20old%20website.docx,22170,26238.04,1798,21576,"Kingston, Ont 136685 pop",-9193.83,-30769.83,-14587.83,1110,431,1448
+,,,,,,,PhD,https://biology.queensu.ca/,,,FALSE,FALSE,5772.99,1482.8,7255.79,,,5772.99,2238.8,8011.79,,Yes,4,25800,18544.21,,17788.21,,,,,,2022-2023,1,1.5,2,2,,https://www.queensu.ca/registrar/tuition-fees/graduate,https://biology.queensu.ca/default/assets/File/Biology%20Guide%20to%20Graduate%20Studies%20Jan%202024%20for%20old%20website.docx,,,1798,21576,,-7693.83,-29269.83,-13087.83,1110,431,1448
+,,,NSERC,Physics,Science,"Physics, Engineering Physics & Astronomy",MSc,https://www.queensu.ca/physics/,,,FALSE,FALSE,5772.99,1482.8,7255.79,,,12927.45,2238.8,15166.25,,Yes,2,26642,19386,,11476,,,,,,,1,1.5,3,2,,https://www.queensu.ca/registrar/tuition-fees/graduate,https://www.queensu.ca/physics/grad-studies/msc-degree-overview,,,1798,21576,,-6851.83,-28427.83,-12245.83,1110,431,1448
+,,,,,,,PhD,https://www.queensu.ca/physics/,,,FALSE,FALSE,5772.99,1482.8,7255.79,,,5772.99,2238.8,8011.79,,Yes,4,27842,20586,,19830,,,,,,,1,1.5,3,2,,https://www.queensu.ca/registrar/tuition-fees/graduate,https://www.queensu.ca/physics/grad-studies/phd-degree-overview,,,1798,21576,,-5651.83,-27227.83,-11045.83,1110,431,1448
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Western,ON,London,NSERC,Biological Sciences - Ecology,Science,Department of Biology ,MSc,uwo.ca/biology ,biogradrequests@uwo.ca,Sarah Abbas,FALSE,FALSE,6360,991.55,7351.55,,,19751.28,991.55,20742.83,,Yes,2,26091.46,18740,37921.46,17179,,,280,,45448,45405,1,1.5,1,3,One of the clearest pages for funding I've come across - this has improved drastically since I was a grad student at Western! Western also has an Affordability Calculator: https://grad.uwo.ca/finances/affordability_calculator.cfm ,,https://uwo.ca/biology/graduate/future-students/financial-support.html,22170,26238.04,1782,21384,London Ont 404699,-7498.13,-28882.13,-12844.13,1323,268,1142
+,,,,,,,PhD,uwo.ca/biology ,biogradrequests@uwo.ca,Sarah Abbas,FALSE,FALSE,6360,991.55,7351.55,,,6360,991.55,7351.55,,Yes,4,26091.46,18740,26091.46,18740,,,280,,45448,45405,1,1.5,1,3,,,https://uwo.ca/biology/graduate/future-students/financial-support.html,,,1782,21384,,-7498.13,-28882.13,-12844.13,1323,268,1142
+,,,NSERC,Physics,Science,Physics and Astronomy,MSc,https://www.physics.uwo.ca/,"Email (Graduate and Academic Information Requests): Brian Davis, bdavis66@uwo.ca ",,FALSE,FALSE,6360,991.55,7351.55,,,26353.55,991.55,27345.1,,Yes,2,18741,11389,28612,1267,,,,,45394,,1,1.5,3,3,"Another unclear sheet of tuition/fee structures. It appears that there's a single year charge for international students, then a per-term tuition cost.",https://www.registrar.uwo.ca/student_finances/fees_refunds/pdfsfeeschedule/Grad%20Fees%20-%20Winter%202022%20FT%20INTL.pdf,,,,1782,21384,,-14848.59,-36232.59,-20194.59,1323,268,1142
+,,,,,,,PhD,https://www.physics.uwo.ca/,,,FALSE,FALSE,6360,991.55,7351.55,,,9521.55,991.55,10513.1,,Yes,4,18741,11389,28612,18099,,,,,45394,,1,1.5,3,3,The graduate handbook appears to be nearly a decade out of date? should contact them.,,,,,1782,21384,,-14848.59,-36232.59,-20194.59,1323,268,1142
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ottawa,ON,Ottawa,NSERC,Biological Sciences - Ecology,Science,Department of Biology,MSc,,,,FALSE,FALSE,2456.71,2489.62,4946.33,2708.53,2489.62,9720.89,3245.62,12966.51,,Yes,2,19500,14553.67,,6533.49,,16791,65-90.5,,45352,2023-20234,0,0,1,0,"Very complex set of fee and tuition structures, which change depending on how long you've been around. I, for consistency, stuck with what it would be if you were just starting with a full-time program. Even better, you have to add up the ancillary fees yourself. Stipend does require TAing at least 1 per term. Hours depend on if it's demonstration (65) or grading (90.5) or a combination (in between)",https://www.uottawa.ca/study/fees-financial-support/university-fees/tuition-canadians-ontario,https://science.uottawa.ca/biology/sites/science.uottawa.ca.biology/files/biogradguidebook-en.pdf,24408,28886.7,1994,23928,,-14333.03,-38261.03,-20315.03,1379,336,334
+,,,,,,,PhD,,,,FALSE,FALSE,2122.2,1934.86,4057.06,2228.31,1934.86,5825.85,2690.86,8516.71,"3,000 / term",Yes,4,20500,16442.94,,16926.23,,18272,65-90.5,,45352,2023-20234,0,0,1,0,There is an international PhD support of $3k/term that just started in 2023. They do describe it as a 'non-guaranteed' funding,,,,,1994,23928,,-12443.76,-36371.76,-18425.76,1379,336,334
+,,,NSERC,Physics,Science,Department of Physics,MSc,https://physics.carleton.ca/future-students/graduate,grad-supervisor@physics.carleton.ca,,FALSE,FALSE,2456.71,2489.62,4946.33,2708.53,2489.62,9720.89,3245.62,12966.51,,Yes,2,32000,27054,UNCLEAR IF DIFFERENT,19033,,29291,,,45352,2023-20234,0,0,1,1,"Took a long time to find stipend information, but I think i got caught in a loop on the faculty's page about the department, rather than the department page.",https://www.uottawa.ca/study/fees-financial-support/university-fees/tuition-canadians-ontario,https://physics.carleton.ca/future-students/graduate/funding-and-awards,,,1994,23928,,-1833.03,-25761.03,-7815.03,1379,336,334
+,,,,,,,PhD,,,,FALSE,FALSE,2122.2,1934.86,4057.06,2228.31,1934.86,5825.85,2690.86,8516.71,"3,000 / term",Yes,5,36000,31943,UNCLEAR IF DIFFERENT,36483,,33772,,,45352,2023-20234,0,0,1,1,,,,,,1994,23928,,3056.24,-20871.76,-2925.76,1379,336,334
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Acadia,NS,Wolfville,NSERC,Biological Sciences - Ecology,Science,Biology,MSc,https://biology.acadiau.ca/home.html,biology@acadiau.ca,mark.mallory@acadiau.ca,TRUE,FALSE,6363.5,725,7088.5,7005,,14750.52,1279,16029.52,,Yes,2,20000,12911.5,,3970.48,,,,,45355,2024-2024,1,1.5,0,0,Including dental and health in calculations,https://www2.acadiau.ca/student-services/student-accounts/tuition-fees/full-time-student-fees.html,Emailed,21868,25880.62,,,"Wolfville, NS 4195 population (!) Small population Center",-12969.12,-12969.12,-12969.12,114,33,120
+,,,,,,,PhD,,,,TRUE,FALSE,10847,1095,11942,12130,,24620,1639,26259,,Yes,2,20000,8058,,-6259,,,,,45355,2024-2024,1,1.5,0,0,,https://www2.acadiau.ca/student-services/student-accounts/tuition-fees/full-time-student-fees.html,Emailed,,,,,,-17822.62,-17822.62,-17822.62,114,33,120
+,,,NSERC,Physics,Science,Does not have graduate program,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,https://www2.acadiau.ca/student-services/student-accounts/tuition-fees/full-time-student-fees.html,,,,,,,-25880.62,-25880.62,-25880.62,114,33,120
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,https://www2.acadiau.ca/student-services/student-accounts/tuition-fees/full-time-student-fees.html,,,,,,,-25880.62,-25880.62,-25880.62,114,33,120
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Saint Mary's,NS,Halifax,NSERC,Biological Sciences - Ecology,Science,Department of Biology,MSc,DOES NOT HAVE MSc PROGRAM,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,23264,27532.78,1925,23100,halifax,-27532.78,-50632.78,-33307.78,179,66,54
+,,,,,,,PhD,DOES NOT HAVE PhD PROGRAM,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1925,23100,,-27532.78,-50632.78,-33307.78,179,66,54
+,,,NSERC,Physics,Science,Astronomy and Physics,MSc,https://www.smu.ca/astronomy-physics/index.html,,,TRUE,FALSE,6591,1713,8304,,,14596,2748,17344,,,,,,,,,,,,,,1,2,,,,https://www.smu.ca/academics/graduate-tuition-fees.html,,,,1925,23100,,-27532.78,-50632.78,-33307.78,179,66,54
+,,,,,,,PhD,https://www.smu.ca/astronomy-physics/index.html,,,TRUE,FALSE,5909,1713,7622,,,10955,2748,13703,,,,,,,,,,,,,,1,2,,,,https://www.smu.ca/academics/graduate-tuition-fees.html,,,,1925,23100,,-27532.78,-50632.78,-33307.78,179,66,54
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ontario Tech University,ON,Oshawa,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,22170,26238.04,1884,22608,Oshawa Ont 170071 pop,-26238.04,-48846.04,-31890.04,231,95,26
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1884,22608,,-26238.04,-48846.04,-31890.04,231,95,26
+,,,NSERC,Physics,Science,Physics     Material Science is joint with Trent University - See Trent,MSc,https://science.ontariotechu.ca/physics/index.php,,,TRUE,FALSE,7579.3,2223.18,9802.48,,,22313.12,2979.18,25292.3,,,,,,,,,,,,,,,,,,,,,,,1884,22608,,-26238.04,-48846.04,-31890.04,231,95,26
+,,,,,,,PhD,https://science.ontariotechu.ca/physics/index.php,,,TRUE,FALSE,7579.3,2223.18,9802.48,,,19166,2979.18,22145.18,,,,,,,,,,,,,,,,,,,,,,,1884,22608,,-26238.04,-48846.04,-31890.04,231,95,26
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Carleton,ON,Ottawa,NSERC,Biological Sciences - Ecology,Science,Department of Biology,MSc,https://carleton.ca/biology/guidelines/,JenniferL.Harris@carleton.ca,Graduate Administrator,TRUE,FALSE,,,6719.62,7315.32,,,,19013.62,,,,,,,,,,10 if on a Full Teaching Assistantship,yes,45335,45405,1,1.5,1,0,Posted tuition amounts include ancillary fees. General to graduate admissions,https://carleton.ca/studentaccounts/tuition-fees/,,24408,28886.7,1994,23928,"Ottawa, Ont",-28886.7,-52814.7,-34868.7,740,176,361
+,,,,,,,PhD,https://carleton.ca/biology/guidelines/,biology@carleton.ca,Graduate Administrator,TRUE,FALSE,,,6443.62,6443.62,,,,15307.62,,,,,,,,,,10 if on a Full Teaching Assistantship,yes,45335,45405,1,1.5,1,0,Posted tuition amounts include ancillary fees,https://carleton.ca/studentaccounts/tuition-fees/,,,,1994,23928,,-28886.7,-52814.7,-34868.7,740,176,361
+,,,NSERC,Physics,Science,Physics,MSc,https://physics.carleton.ca/future-students/graduate/funding-and-awards,,,FALSE,FALSE,,,6719.62,7315.32,,,,19013.62,,Yes,Does not specify,32000,25280,,12986,,24685,,,,,1,1.5,3,0,Posted tuition amounts include ancillary fees,https://carleton.ca/studentaccounts/tuition-fees/,,,,1994,23928,,-3606.32,-27534.32,-9588.32,740,176,361
+,,,,,,,PhD,https://physics.carleton.ca/future-students/graduate/funding-and-awards,,,FALSE,FALSE,,,6443.62,6443.62,,,,15307.62,,Yes,Does not specify,36000,29556,,20692,,29556,,,,,1,1.5,3,0,Posted tuition amounts include ancillary fees,https://carleton.ca/studentaccounts/tuition-fees/,,,,1994,23928,,669.68,-23258.32,-5312.32,740,176,361
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Trent,ON,Peterborough,NSERC,Biological Sciences - Ecology,Science,"Graduate programs are through the interdisciplinary 
+Environmental & Life Sciences Graduate Programs",MSc,https://www.trentu.ca/els/environmental-life-sciences,enlsgrad@trentu.ca,,TRUE,FALSE,8090.87,458.67,8549.54,9012.79,,22276.07,458.67,22734.74,,Not clear,,,,,,,,,,45363,,0,1,0,0,,https://www.trentu.ca/graduatestudies/tuition-awards-funding ,https://www.trentu.ca/els/experience,21049,24911.34,,,Peterborough ont 84230 pop Medium population Center,-24911.34,-24911.34,-24911.34,220,70,95
+,,,,,,,PhD,https://www.trentu.ca/els/environmental-life-sciences,enlsgrad@trentu.ca,,TRUE,FALSE,8090.87,458.67,8549.54,9012.79,,22276.07,458.67,22734.74,,Not clear,,,,,,,,,,45363,,0,1,0,0,,https://www.trentu.ca/graduatestudies/tuition-awards-fundin ,https://www.trentu.ca/els/experience,,,,,,-24911.34,-24911.34,-24911.34,220,70,95
+,,,NSERC,Physics,Science,Physics & Astronomy (Materials Science) - Linked to Ontario Tech. Emailed here.,MSc,https://www.trentu.ca/physics/,materials@trentu.ca,,TRUE,FALSE,8090.87,1069.24,9160.11,9012.79,,22276.07,1825.24,24101.31,,,,,,,,,,,,,,,,,,Included the health and dental fees,,,,,,,,-24911.34,-24911.34,-24911.34,220,70,95
+,,,,,,,PhD,,,,TRUE,FALSE,8090.87,1069.24,9160.11,9012.79,,22276.07,1825.24,24101.31,,,,,,,,,,,,,,,,,,,,,,,,,,-24911.34,-24911.34,-24911.34,220,70,95
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Brock,ON,St. Catharines,NSERC,Biological Sciences - Ecology,Science,Department of Biological Sciences,MSc,https://brocku.ca/programs/graduate/msc-biol/,askandalis@brocku.ca,"Adonis Skandalis, Graduate Program Director",TRUE,TRUE,,,6725.34,,,,,20401.02,None indicated,Yes,2,16591.2,-3810,23591.2,3190.18,,,10,Not provided,45363,45405,0,1,0,2,Ancillary fees included in posted tuition. International students charged an additional $750.00 per term (included in total value). Stipend value from TAship given on an hourly rate; I have added TAship to base stipend based on 10 hours a week assuming 24 teaching weeks per year,https://brocku.ca/safa/2024-graduate-tuition-and-fees/#2023-gr-fees-per-termd620-80b21bef-7b87c659-fdd83416-d107861d-79adfd50-8a0fd1c3-6c58,https://brocku.ca/graduate-studies/scholarships-awards/funding/,22170,26238.04,1680,20160,"St. Catharines, Ont 140370 pop large urban pop",-30047.86,-50207.86,-35087.86,385,98,122
+,,,,,,,PhD,https://brocku.ca/programs/graduate/phd-biol/,fmsgradoffice@brocku.ca,General inquiry,TRUE,TRUE,,,6725.34,,,,,20401.02,None indicated,Yes,4,21591.2,1190,31591.2,11190.18,,,10,Not provided,45363,45405,0,1,0,2,Ancillary fees included in posted tuition. International students charged an additional $750.00 per term (included in total value). ,https://brocku.ca/safa/2024-graduate-tuition-and-fees/#2023-gr-fees-per-termd620-80b21bef-7b87c659-fdd83416-d107861d-79adfd50-8a0fd1c3-6c58,https://brocku.ca/graduate-studies/scholarships-awards/funding/,,,1680,20160,,-25047.86,-45207.86,-30087.86,385,98,122
+,,,NSERC,Physics,Science,Physics Department,MSc,https://www.physics.brocku.ca/,,,FALSE,FALSE,2725.41,1099.79,3825.2,,,7475.34,1873.59,9348.93,,No,,,,,,,,,,45400,,0,1,1,0,"""The Master of Science in Materials Physics International Student Program is an unfunded program.
+Graduate students in the Faculty of Math and Science may be eligible for a variety of scholarships,
+fellowships, and awards administered by Brock University and external agencies""",https://brocku.ca/safa/2024-graduate-tuition-and-fees/#2023-gr-fees-per-termd620-80b21bef-7b87c659-fdd83416-d107861d-79adfd50-8a0fd1c3-6c58,https://www.physics.brocku.ca/Programs/MSMP_Handbook.pdf,,,1680,20160,,-26238.04,-46398.04,-31278.04,385,98,122
+,,,,,,,PhD,,,,FALSE,FALSE,2725.41,1099.79,3825.2,,,7475.34,1873.59,9348.93,,No,,,,,,,,,,45400,,0,1,1,0,"""Many graduate students require financial assistance to pursue their studies. Graduate students in the
+Faculty of Math and Science are eligible for a variety of scholarships, fellowships, and awards
+administered by Brock University and the Ontario and Canadian Governments (e.g. NSERC, OGS, etc.) A
+listing of these awards can be obtained by consulting the section on Financial Assistance in the Graduate
+Studies Calendar""",https://brocku.ca/safa/2024-graduate-tuition-and-fees/#2023-gr-fees-per-termd620-80b21bef-7b87c659-fdd83416-d107861d-79adfd50-8a0fd1c3-6c58,https://www.physics.brocku.ca/Programs/PHD_Handbook.pd,,,1680,20160,,-26238.04,-46398.04,-31278.04,385,98,122
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Laurentian,ON,Sudbury,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,22170,26238.04,,,"sudbury ont 164926 pop, large urban population center",-26238.04,-26238.04,-26238.04,145,92,48
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-26238.04,-26238.04,-26238.04,145,92,48
+,,,NSERC,Physics,Science,Closed,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-26238.04,-26238.04,-26238.04,145,92,48
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-26238.04,-26238.04,-26238.04,145,92,48
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+University of Toronto,ON,Toronto,NSERC,Biological Sciences - Ecology,Science,Department of Ecology & Evolutionary Biology,MSc,https://eeb.utoronto.ca/education/graduate/,gradadmin.eeb@utoronto.ca,,FALSE,FALSE,6210,,6210,,,28900,,28900,Some exemptions available,Yes,16 months,33214,27004,,4314,,,140 hours per year,Not specified,45363,45405,,,3,1,"The best most informative stipend page I've found yet for Ecology programs, which is still not complete. Note: this is the department of SOS Chair of the Board Prof. Marc Johnson. Tuition data on the other hand directed me from program page to Student Accounts page to Planning & Budget page. Some information on international students possibly eligible for an exemption allowing them to pay domestic fees. Actual tuition information buried in an Appendix in a PDF",https://planningandbudget.utoronto.ca/wp-content/uploads/2023/03/2023-24-Tuition-Fee-Report.pdf,https://eeb.utoronto.ca/education/graduate/graduate-finances/graduate-stipends/,24864,29426.37,2479,29748,,-2422.37,-32170.37,-9859.37,3724,719,3267
+,,,,,,,PhD,https://eeb.utoronto.ca/education/graduate/,gradadmin.eeb@utoronto.ca,,FALSE,FALSE,6210,,6210,,,6210,,6210,Some exemptions available,Yes,"4-5, depending on admission stream (direct entry into PhD, or roll-up from MSc)",33214,27004,,27004,,,140 hours per year,Not specified,45363,45405,,,3,1,"The best most informative stipend page I've found yet for Ecology programs, which is still not complete. Note: this is the department of SOS Chair of the Board Prof. Marc Johnson. ",https://planningandbudget.utoronto.ca/wp-content/uploads/2023/03/2023-24-Tuition-Fee-Report.pdf,https://eeb.utoronto.ca/education/graduate/graduate-finances/graduate-stipends/,,,2479,29748,,-2422.37,-32170.37,-9859.37,3724,719,3267
+,,,NSERC,Physics,Science,Physics,MSc,https://www.physics.utoronto.ca/graduate/,gchair@physics.utoronto.ca,"Joseph Thywissen, Associate Chair of Graduate Studies",TRUE,FALSE,6210,,6210,,,28900,,28900,,,,,,,,,,,,,,0,1,0,0,"The link to the page summarizing ""estimated support levels for physics graduate students in their first five years"" returns a 404 error. Pages also give information on parental leave, childcare, and conference attendance support. ",,,,,2479,29748,,-29426.37,-59174.37,-36863.37,3724,719,3267
+,,,,,,,PhD,https://www.physics.utoronto.ca/graduate/,gchair@physics.utoronto.ca,"Joseph Thywissen, Associate Chair of Graduate Studies",TRUE,FALSE,6210,,6210,,,6210,,6210,,,,,,,,,,,,,,0,1,0,0,"The link to the page summarizing ""estimated support levels for physics graduate students in their first five years"" returns a 404 error. The department offers financial support to students near the end of the program, which seems to be a major departure from other graduate programs in the country. ""in their final year in the funded cohort, PhD students will receive a Program Level Fellowship (PLF), whose value is $5,000. This support level allows students to reduce their TA commitment for the year, in order to finish up their thesis research and/or concentrate on the drafting of their final publications and thesis document."" There is also: ""The Doctoral Completion Award (DCA) program is intended to support full-time PhD students who are in the first two years beyond the funded cohort. The full value of the award for 2023/24 is $4,400."" Pages also give information on parental leave, childcare, and conference attendance support. ",,,,,2479,29748,,-29426.37,-59174.37,-36863.37,3724,719,3267
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+York,ON,Toronto,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,24864,29426.37,2479,29748,,-29426.37,-59174.37,-36863.37,1296,399,567
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,2479,29748,,-29426.37,-59174.37,-36863.37,1296,399,567
+,,,NSERC,Physics,Science,Physics and Astronomy,MSc,https://www.yorku.ca/science/physics/,phasgpd@yorku.ca,"their grad email is dead, this is for Prof. Johnson, grad program director",FALSE,TRUE,1435.51,297.12,1732.63,,,6275,1053.12,7328.12,,No,,,,,,,,,,45400,,,,,,Included the UHIP in the ancillary fees cost,https://sfs.yorku.ca/fees/courses/2024/summer/graduate-studies/masters,https://www.yorku.ca/gradstudies/physics-astronomy/wp-content/uploads/sites/383/2023/08/Graduate-Handbook-2023-2024.pdf,,,2479,29748,,-29426.37,-59174.37,-36863.37,1296,399,567
+,,,,,,,PhD,,,,FALSE,TRUE,1435.51,717.75,2153.26,,,6000,1053.12,7053.12,,No,,,,,,,,,,45400,,,,,,,,https://www.yorku.ca/gradstudies/physics-astronomy/wp-content/uploads/sites/383/2023/08/Graduate-Handbook-2023-2024.pdf,,,2479,29748,,-29426.37,-59174.37,-36863.37,1296,399,567
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TMU (Ryerson),ON,Toronto,NSERC,Biological Sciences - Ecology --> MASc/PhD in Environmental Applied Science and Management ,Science,Department of Chemistry and Biology,MSc,https://www.torontomu.ca/chemistry-biology/graduate-studies/program-overview/,stephanie.assenza@torontomu.ca,,TRUE,FALSE,7612.63,1363.99,8976.62,10470.14,,24260,2119.98,26379.98,No,No,0,15000,,,,,,0,0,45371,45405,0,0.5,0,0,"No stipend data found. Tuition data provided for whole program (expected time in program) rather than annual on main page. Had to calculate ancillary fees from total fees minus tuition by term. The input $9,000 is based on the ""3-5k per term"" estimate given to me by the department contact. ",https://www.torontomu.ca/current-students/tuition-fees/graduate/,N/A,24864,29426.37,2479,29748,Toronto,-29426.37,-59174.37,-36863.37,1036,262,155
+,,,,,,,PhD,https://www.torontomu.ca/chemistry-biology/graduate-studies/program-overview/,stephanie.assenza@torontomu.ca,,TRUE,FALSE,7612.63,1363.99,8976.62,8644.71,,23240,2119.99,25359.99,No,No,0,15000,,,,,,0,0,45371,45405,0,0.5,0,0,"No stipend data found. Tuition data provided for whole program (expected time in program) rather than annual on main page. Had to calculate ancillary fees from total fees minus tuition by term. The input $9,000 is based on the ""3-5k per term"" estimate given to me by the department contact. ",https://www.torontomu.ca/current-students/tuition-fees/graduate/,NA,,,2479,29748,,-29426.37,-59174.37,-36863.37,1036,262,155
+,,,NSERC,Physics ---> Only 'Biomedical Physics',Science,Department of Physics,MSc,https://www.torontomu.ca/physics/graduate-studies/fields-of-study/,biomed@torontomu.ca,,TRUE,FALSE,8153.12,1815.69,9968.81,9258.48,,24260,3075.69,27335.69,No,,,,,,,,,10,0,45371,45405,0,0.5,0,0,"No stipend data found. Tuition data provided for whole program (expected time in program) rather than annual on main page. Had to calculate ancillary fees from total fees minus tuition by term. Notes re: fees STUDENTS REGISTERING IN WINTER 2024 MUST ADD $451.70 (TMGSU WINTER HEALTH & DENTAL PLAN) TO TOTAL FEES"" and ""STUDENTS REGISTERING IN WINTER 2024 MUST ADD $504.00 (UNIVERSITY HEALTH INSURANCE PLAN) TO TOTAL FEES""; those values are added here",https://www.torontomu.ca/current-students/tuition-fees/graduate/,NA,,,2479,29748,,-29426.37,-59174.37,-36863.37,1036,262,155
+,,,,,,,PhD,https://www.torontomu.ca/physics/graduate-studies/fields-of-study/,biomed@torontomu.ca,,TRUE,FALSE,7612.63,1815.69,9428.32,8233.06,,23240,2119.99,25359.99,No,,,,,,,,,10,0,45371,45405,0,0.5,0,0,"No stipend data found. Tuition data provided for whole program (expected time in program) rather than annual on main page. Had to calculate ancillary fees from total fees minus tuition by term. Notes re: fees STUDENTS REGISTERING IN WINTER 2024 MUST ADD $451.70 (TMGSU WINTER HEALTH & DENTAL PLAN) TO TOTAL FEES"" and ""STUDENTS REGISTERING IN WINTER 2024 MUST ADD $504.00 (UNIVERSITY HEALTH INSURANCE PLAN) TO TOTAL FEES""; those values are added here",https://www.torontomu.ca/current-students/tuition-fees/graduate/,NA,,,2479,29748,,-29426.37,-59174.37,-36863.37,1036,262,155
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Waterloo,ON,Waterloo,NSERC,Biological Sciences - Ecology,Science,Department of Biology ,MSc,https://uwaterloo.ca/biology/graduate-studies ,awettig@uwaterloo.ca,"April Wettig, Graduate Administrative Coordinator",FALSE,FALSE,6762,1777.61,8539.61,,,23088,2533.61,25621.61,Additional funding may be available to offset international tuition differential,Yes,2,26073,451,26073,451,,,10 hours/week for 2 terms if holding a GTA,,45363,45405,0,1,2,1,"Tuition information not linked from program page. Individual terms are given in several sub-pages listing all programs, very difficult to scroll through to figure out what a graduate student would pay in a year. ""Effective fall 2023, any student who is 
+not international (Canadian citizen, permanent resident, or protected person) or who does not qualify as an Ontario resident will be considered a Domestic Out of Province student.åÊNote that this change will affect a subset of graduate programs and all undergraduate programs.""",https://uwaterloo.ca/finance/student-financial-services/tuition-fee-schedules,https://uwaterloo.ca/biology/sites/default/files/uploads/documents/bgs-handbook-2324-v2.pdf,22170,26238.04,2046,24552,"Waterloo ont, 113520 population, large population center",-25786.65,-50338.65,-31924.65,1226,437,492
+,,,,,,,PhD,https://uwaterloo.ca/biology/graduate-studie ,awettig@uwaterloo.ca,"April Wettig, Graduate Administrative Coordinator",FALSE,FALSE,6762,1777.61,8539.61,,,23088,2533.61,25621.61,Additional funding may be available to offset international tuition differential,Yes,4,26073,451,26073,451,,,10 hours/week for 2 terms if holding a GTA,,45363,45405,0,1,2,1,"Tuition information not linked from program page. Individual terms are given in several sub-pages listing all programs, very difficult to scroll through to figure out what a graduate student would pay in a year. ""Effective fall 2023, any student who is not international (Canadian citizen, permanent resident, or protected person) or who does not qualify as an Ontario resident will be considered a Domestic Out of Province student. Note that this change will affect a subset of graduate programs and all undergraduate programs.""",https://uwaterloo.ca/finance/student-financial-services/tuition-fee-schedules,https://uwaterloo.ca/biology/sites/default/files/uploads/documents/bgs-handbook-2324-v2.pdf,,,2046,24552,,-25786.65,-50338.65,-31924.65,1226,437,492
+,,,NSERC,Physics,Science,Department of Physics and Astronomy,MSc,https://uwaterloo.ca/physics-astronomy/,physicsgradoffice@uwaterloo.ca,"Sophie Gagnon, Graduate Studies Co-ordinator",FALSE,FALSE,6762,1753.89,8515.89,,,23088,2509.89,25597.89,,Yes,2,,21000,,21000,,,10 hours/week for 2 terms if holding a GTA,,45371,45405,0,1,3,1,"Stipend estimated value is after fees and tuition. Tuition information not linked from program page. Individual terms are given in several sub-pages listing all programs, very difficult to scroll through to figure out what a graduate student would pay in a year. ""Effective fall 2023, any student who is not international (Canadian citizen, permanent resident, or protected person) or who does not qualify as an Ontario resident will be considered a Domestic Out of Province student. Note that this change will affect a subset of graduate programs and all undergraduate programs.""",https://uwaterloo.ca/finance/student-financial-services/tuition-fee-schedules,https://uwaterloo.ca/physics-astronomy/graduate-studies/msc-programs,,,2046,24552,,-5238.04,-29790.04,-11376.04,1226,437,492
+,,,,,,,PhD,https://uwaterloo.ca/physics-astronomy/,physicsgradoffice@uwaterloo.ca,"Sophie Gagnon, Graduate Studies Co-ordinator",FALSE,FALSE,6762,1753.89,8515.89,,,22188,2509.89,24697.89,,Yes,4,,21000,,21000,,,10 hours/week for 2 terms if holding a GTA,,45371,45405,0,1,3,1,"Stipend estimated value is after fees and tuition. Tuition information not linked from program page. Individual terms are given in several sub-pages listing all programs, very difficult to scroll through to figure out what a graduate student would pay in a year. ""Effective fall 2023, any student who is not international (Canadian citizen, permanent resident, or protected person) or who does not qualify as an Ontario resident will be considered a Domestic Out of Province student. Note that this change will affect a subset of graduate programs and all undergraduate programs.""",https://uwaterloo.ca/finance/student-financial-services/tuition-fee-schedules,https://uwaterloo.ca/physics-astronomy/graduate-studies/phd-programs,,,2046,24552,,-5238.04,-29790.04,-11376.04,1226,437,492
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Wilfrid Laurier,ON,Waterloo,NSERC,Biological Sciences - Ecology,Science,,MSc,https://wlu.ca/programs/science/graduate/integrative-biology-msc/index.html,integrativebiology@wlu.ca,,FALSE,FALSE,6788.76,1708.56,8497.32,,,21171.39,1708.56,22879.95,Legal dependants,Yes,,16480,7983,,-6400,,,Optional,,19-02-2024,,0,0.25,1,0,Website indicates that numbers might vary between programs but program page redirects to common weboage,https://www.wlu.ca/academics/faculties/graduate-and-postdoctoral-studies/tuition-and-funding/index.html?ref=graduate-and-postdoctoral-studies%2Ffunding-at-a-glance%2Findex.html,,22170,26238.04,2046,24552,Waterloo,-18255.36,-42807.36,-24393.36,421,127,114
+,,,,,,,PhD,https://wlu.ca/programs/science/graduate/biological-and-chemical-sciences-phd/index.html,"bcs@wlu.ca, ghorsman@wlu.ca, mwilkie@wlu.ca",,FALSE,FALSE,6788.76,1708.56,8497.32,,,21171.39,1708.56,22879.95,Legal dependants,Yes,4,24000,15503,,1120,,,Optional,,19-02-2024,,0,0.25,1,0,Website indicates that numbers might vary between programs but program page redirects to common weboage,https://www.wlu.ca/academics/faculties/graduate-and-postdoctoral-studies/tuition-and-funding/index.html?ref=graduate-and-postdoctoral-studies%2Ffunding-at-a-glance%2Findex.html,,,,2046,24552,,-10735.36,-35287.36,-16873.36,421,127,114
+,,,NSERC,Physics,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,2046,24552,,-26238.04,-50790.04,-32376.04,421,127,114
+,,,,,,,PhD,No Program,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,2046,24552,,-26238.04,-50790.04,-32376.04,421,127,114
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Windsor,ON,Windsor,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,22170,26238.04,1421,17052,"Windsor, Ont 233763 population large population",-26238.04,-43290.04,-30501.04,427,140,140
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1421,17052,,-26238.04,-43290.04,-30501.04,427,140,140
+,,,NSERC,Physics,Science,Department of Physics,MSc,https://www.uwindsor.ca/science/physics/,,,FALSE,FALSE,7179.3,1597.08,8776.38,7538.25,,24165,2337.24,26502.24,,No,,,,,,,,,,,45400,,,,,They have only 'typical student stipends are' with no minimums noted.,,https://www.uwindsor.ca/science/physics/sites/uwindsor.ca.science.physics/files/2019-2020_physics_graduate_handbook_without_funding_packages.pdf,,,1421,17052,,-26238.04,-43290.04,-30501.04,427,140,140
+,,,,,,,PhD,,,,FALSE,FALSE,7179.3,1597.08,8776.38,7179.3,,23685,2337.24,26022.24,,No,,,,,,,,,,,45400,,,,,,,,,,1421,17052,,-26238.04,-43290.04,-30501.04,427,140,140
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+McGill,QC,Montreal,NSERC,Biological Sciences - Ecology,Science,Department of Biology,MSc,https://www.mcgill.ca/biology/graduate-studies/current-graduate-students-0/graduate-funding-0,,,FALSE,FALSE,2967.3,2416.53,5383.83,9261.6,,20319.9,3013.53,23333.43,Full,yes,2,,20498,,20498,,,180/yr,,45449,2024-2025,1,2,3,3,"Tuition will be reimbursed: ""You will receive a subsidy to cover the cost of tuition and fees which you must pay to the University each term. This subsidy is paid by your supervisor and/or by awards that you receive. International students may additionally receive a Differential Fee Waiver (DFW) from GPS or an international student tuition relief award from the Department to offset your higher tuition cost.""",,https://www.mcgill.ca/biology/graduate-0/current-graduate-students-0/graduate-funding-0,20753,24561.03,1763,21156,Montreal Q,-4063.03,-25219.03,-9352.03,1676,866,1822
+,,,,,,,PhD,https://www.mcgill.ca/biology/graduate-studies/current-graduate-students-0/graduate-funding-0,,,FALSE,FALSE,2967.3,2416.53,5383.83,,,18239.7,3013.53,21253.23,Full,yes,45387,,22063,,22063,,,180/yr,,45449,2024-2025,1,2,3,3,AF: Updated with most recent numbers,,,,,1763,21156,,-2498.03,-23654.03,-7787.03,1676,866,1822
+,,,NSERC,Physics,Science,Department of Physics,MSc,https://www.physics.mcgill.ca/grads/finance.html,Grad program coordinator,graduate.physics@mcgill.ca,FALSE,FALSE,2880.9,2330.62,5211.52,4495.95,,19728,2840,22568,,Yes,,25500,20288,42347,19779,27115,20288,,,45415,2023-2024,2,2,3,2,"TA total: 5945 (AF edit: This was done incorrectly. The page says that 2880.90 is the tuition after department subsidies, so it must be higher than that. I have/am revising this so that it's correct. It only impacts the OOP MSc and International MSc PhD tuitions. They have equalized the tuitions so all students, regardless of origin, pay same amount)",,,,,1763,21156,,-4272.55,-25428.55,-9561.55,1676,866,1822
+,,,,,,,PhD,https://www.physics.mcgill.ca/grads/finance.html,grad program director (Nikolaos Provatas),nikolaos.provatas@mcgill.ca,FALSE,FALSE,2880.9,2330.62,5211.52,,,17708.4,2840,20548.4,,Yes,,25500,20288,40328,19779,25500,23169,,,45415,2023-2024,2,2,3,2,,,,,,1763,21156,,-4272.55,-25428.55,-9561.55,1676,866,1822
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,Political Science ,MA,,,,FALSE,FALSE,,,0,,,,,0,,20000,,20000,20000,,,,,,,,,,,,,funding is not guaranteed for MA students,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,for five years,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,School of Biomedical Sciences,MSc,"https://www.mcgill.ca/biochemistry/students/graduate-studies/prospective-students/masterdoctoral-program#:~:text=Masters%20students%20receive%20a%20minimum,annually%3B%20doctoral%20students%20receive%20%2422%2C000.",,,FALSE,FALSE,,,0,,,,,0,,20000,,,21183,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,"https://www.mcgill.ca/biochemistry/students/graduate-studies/prospective-students/masterdoctoral-program#:~:text=Masters%20students%20receive%20a%20minimum,annually%3B%20doctoral%20students%20receive%20%2422%2C000.",,,FALSE,FALSE,,,0,,,,,0,,22000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,Civil Engineering,MEng,https://www.mcgill.ca/civil/grad/financial,,,FALSE,FALSE,,,0,,,,,0,,"$17,300 or $17,500",,19876,,,,,,1688,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,https://www.mcgill.ca/civil/grad/financial,,,FALSE,FALSE,,,0,,,,,0,,"$21,000 or $35,000",,22376,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+UdeM,QC,Montreal,NSERC,Biological Sciences - Ecology,Science,Department of Biological Science,MSc,https://bio.umontreal.ca/english/student-resources/financial-support/#c83414,,,FALSE,FALSE,4450.95,1902.27,6353.22,13892.4,,30479.85,1902.27,32382.12,,Yes,?,13000,6646.78,13000,-19382.12,13000,-2794.67,,,45449,2024,1,1.5,3,1,"No statement about how long tuition is guarenteed, TA hours, etc",https://esp.umontreal.ca/english/what-you-need-to-know/admission/tuition-fees/,https://esp.umontreal.ca/english/what-you-need-to-know/admission/tuition-fees/,20753,24561.03,1763,21156,,-17914.25,-39070.25,-23203.25,1277,662,442
+,,,,,,,PhD,https://bio.umontreal.ca/english/student-resources/financial-support/#c83414,,,FALSE,FALSE,4450.95,1902.27,6353.22,,,27359.55,1902.27,29261.82,,Yes,?,15000,8646.78,15000,-14261.82,,,,,45449,2024,1,1.5,3,1,,https://esp.umontreal.ca/english/what-you-need-to-know/admission/tuition-fees/,https://esp.umontreal.ca/english/what-you-need-to-know/admission/tuition-fees/,,,1763,21156,,-15914.25,-37070.25,-21203.25,1277,662,442
+,,,NSERC,Physics,Science,Department of Physics,MSc,https://phys.umontreal.ca/english/home/,,physique@umontreal.ca,FALSE,FALSE,4450.95,1902.27,6353.22,13892.4,,30479.85,1902.27,32382.12,,Yes,?,17550,11197,17550,-14832,17550,1755,,,45449,2024-2025,1,1.5,3,0,"No statement about how long tuition is guarenteed, TA hours, etc",https://esp.umontreal.ca/english/what-you-need-to-know/admission/tuition-fees/,https://phys.umontreal.ca/english/student-resources/financial-support/,,,1763,21156,,-13364.25,-34520.25,-18653.25,1277,662,442
+,,,,,,,PhD,https://phys.umontreal.ca/english/home/,,,FALSE,FALSE,4450.95,1902.27,6353.22,,,27359.55,1902.27,29261.82,,Yes,?,20100,13747,20100,-9162,,,,,45449,2024-2025,1,1.5,3,0,,https://esp.umontreal.ca/english/what-you-need-to-know/admission/tuition-fees/,https://phys.umontreal.ca/english/student-resources/financial-support/,,,1763,21156,,-10814.25,-31970.25,-16103.25,1277,662,442
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Concordia,QC,Montreal,NSERC,Biological Sciences - Ecology,Science,Department of Biology ,MSc,https://www.concordia.ca/artsci/biology/programs/graduate/phd-biology.html,,,FALSE,FALSE,7350,,7350,16800,,,,0,,Yes,2,15000,,,,,,,,45449,,,,3,0,,,https://www.concordia.ca/content/dam/artsci/biology/docs/BIOLGradprogramguiderevised2024_inprogressMICHELLEApril2024_Changes_Accepted.pdf,20753,24561.03,1763,21156,Montreal,-24561.03,-45717.03,-29850.03,799,320,143
+,,,,,,,PhD,,,,FALSE,FALSE,5200,,5200,5200,,,,0,,Yes,3,15000,,,,,,,,45449,,,,3,0,,,https://www.concordia.ca/content/dam/artsci/biology/docs/BIOLGradprogramguiderevised2024_inprogressMICHELLEApril2024_Changes_Accepted.pdf,,,1763,21156,,-24561.03,-45717.03,-29850.03,799,320,143
+,,,NSERC,Physics,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,10000,,,,,,,,,,,,,,,,,,,,,1763,21156,,-24561.03,-45717.03,-29850.03,799,320,143
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,14000,,,,,,,,,,,,,,,,,,,,,1763,21156,,-24561.03,-45717.03,-29850.03,799,320,143
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,14000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,14000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,10000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,14000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,14000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+UQAM,QC,Montreal,NSERC,Biological Sciences - Ecology,Science,DÌ©partement des sciences biologiques,MSc,https://bio.uqam.ca/en/#,,cyclesupbiologie@uqam.ca,TRUE,FALSE,4315,,4315,11400,,23840,,23840,,Yes,2,12500,,,,,,,,45447,2024-2025,1,1,0,0,Tuition & Fees are presented together,https://etudier.uqam.ca/cout-bourses,,20753,24561.03,1763,21156,Montreal,-24561.03,-45717.03,-29850.03,628,347,
+,,,,,,,PhD,,,,TRUE,FALSE,4315,,4315,4315,,4315,,4315,Full,Yes,4,17000,,,,,,,,45447,2024-2025,1,1,1,0,"‰Û¢        •ÛÊDo you offer a guaranteed stipend for graduate students (both master‰Ûªs and PhD)?
+The program of biology at UQAM imposes professors to pay a minimum stipends per student per year.
+MSc = $12500 / PhD = $17000
+Professors can ask for a maximum of one derogation. In biology, most professors pay their student more than this minimum (I would say the average is around $20000 before TAships, which means that students may be able to get around $25000 per year, they may also apply to institutional fellowships to get more money, and again whether the supervisors reduces their contribution or not depends on the professor).
+UQAM also provides 13 000$ as an automatic institutional fellowship to every PhD student (5K 1st year ; 4k 2nd year ; 4K 3rd year). But professors can decide to include or not that amount in the minimum stipend described above.
+
+‰Û¢        •ÛÊIf so, how many years is this stipend guaranteed for?
+MSc = 2 years (6 terms) / PhD = 4 years (12 terms). There is no obligation, but most professors would extend the stipends if the student needs to extend their registration. 
+
+‰Û¢        •ÛÊWhat is the minimum value of this stipend (either gross or net of tuition)?
+See above (gross).
+
+‰Û¢        •ÛÊAre students required to TA or RA on non-thesis-related work to attain this minimum level?
+No. Students can choose to add TAships to this stipends. They generally do. 
+I‰Ûªve heard some professors asked their students to do non-thesis-related research work, but I don‰Ûªt think it‰Ûªs the norm.
+
+‰Û¢        •ÛÊIf TAing or RAing is required, how many hours per year (or week) does this entail?
+We set a maximum number of TAships per year, because too much teaching could delay the thesis work. 
+
+‰Û¢        •ÛÊDoes the department have any initiatives in place to mitigate higher tuition and healthcare costs for international students?
+Yes. All the international PhD students (or the Canadian non Quebecer students) pay tuition fees that are equivalent to those of Quebec residents. That comes from an automatic tuition support from UQAM institution.
+Unfortunately it‰Ûªs not automatic for Master‰Ûªs students, but UQAM‰Ûªs Faculty of Science provides some fellowships per year to reduce tuition fees to the same level as Quebec students for the two years of the MSc.
+If you want to get more information on tuition fees at UQAM: https://etudier.uqam.ca/cout-bourses
+Every students who comes to Quebec, becomes a (temporary) Quebec resident and thus gets the provincial health care coverage.
+I hope this will help. Thanks a lot for you actions! It‰Ûªs really appreciated. I‰Ûªll try to change the content of the web page to add this type of information.
+Best
+Denis
+",,https://etudier.uqam.ca/programme?code=3805,,,1763,21156,,-24561.03,-45717.03,-29850.03,628,347,
+,,,NSERC,Physics,Science,"No physics department, using Sciences de l‰ÛªatmosphÌ¬re: mÌ©tÌ©o et climat",MSc,http://www.ism.uqam.ca/,,prog.scta.sup@uqam.ca,TRUE,FALSE,4315,,4315,11400,,23840,,23840,,No,,,,,,,,,,45447,,1,1,0,0,There is no physics department at UQAM (it appears to be run through neighboring institutions?). Using Atmospheric sciences instead,,,,,1763,21156,,-24561.03,-45717.03,-29850.03,628,347,
+,,,,,,,PhD,,Got email returned from a main Science faculty officer,facsciences.coordo@uqam.ca,TRUE,FALSE,4315,,4315,4315,,4315,,4315,,Yes,,13000,,,,,,,,45447,,1,1,0,0,"Hello,
+
+There is no garanteed stipend by the programs, altough PhD students almost always receive grants or are hired by their research direction.
+
+The university itself offers garanteed grants to all full time doctorate students (""bourse de soutien universel au doctorat""): https://bourses.uqam.ca/trouver-une-bourse/programme-de-bourses-de-soutien-universel-au-doctorat/ . It is 13 000$.
+
+There are also some grants offered to some master students, but it is not for all of them. It gives 4000$: https://bourses.uqam.ca/trouver-une-bourse/bourses-institutionnelles-aux-cycles-superieurs/
+Some  grants for master students are specifically offered to international students, to lower the cost of tuition: https://bourses.uqam.ca/trouver-une-bourse/bourses-detudes-droits-de-scolarite-majores/ . 
+
+And of course there are institutionna grants for excellence, as well as a lot of paid research work available (but not garanteed).
+
+I hope this will be usefull to you.
+
+Regards,
+
+ 
+
+Sophie Bonin
+Coordonnatrice, FacultÌ© des sciences
+514-987-3000 poste 2258
+ 
+",,,,,1763,21156,,-24561.03,-45717.03,-29850.03,628,347,
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Laval,QC,Quebec City,NSERC,Biological Sciences - Ecology,Science,Departemente de Biologie,MSc,https://www.fsg.ulaval.ca/departements/departement-de-biologie,,info@bio.ulaval.ca,TRUE,FALSE,2304.72,975.28,3280,7193.52,,15782.4,975.28,16757.68,,No,,,-3280,,,,-8168.8,,,45447,,,,,,"Average is ~15k for MSc, 20k PhD",https://www.bbaf.ulaval.ca/en/scholarships-bursaries/canadian-citizens-or-permanent-residents/masters-program-funding/,https://www.fsg.ulaval.ca/futurs-etudiants/bourses-couts-et-financement-des-etudes#c41560,20462,24216.63,1353,16236,Quebec City,-27496.63,-43732.63,-31555.63,1125,512,34
+,,,,,,,PhD,,,,TRUE,FALSE,2304.72,975.28,3280,,,14166.72,975.28,15142,,No,,,-3280,,,,,,,45447,,,,,,Tuition based on 2 terms of 12 credits each.,https://www.bbaf.ulaval.ca/en/scholarships-bursaries/canadian-citizens-or-permanent-residents/masters-program-funding/,https://www.fsg.ulaval.ca/futurs-etudiants/bourses-couts-et-financement-des-etudes#c41560,,,1353,16236,,-27496.63,-43732.63,-31555.63,1125,512,34
+,,,NSERC,Physics,Science,"DÌ©partement de physique, de gÌ©nie physique et d'optique",MSc,https://www.fsg.ulaval.ca/departements/departement-de-physique-de-genie-physique-et-doptique,,phy@phy.ulaval.ca,TRUE,FALSE,2304.72,975.28,3280,7193.52,,15782.4,975.28,16757.68,,"No (officially, informally most offer the following)",2,16000,12720,,-758,,7831,,,45447,2024-2025,0,0,0,0,,,Email,,,1353,16236,,-11496.63,-27732.63,-15555.63,1125,512,34
+,,,,,,,PhD,,,,TRUE,FALSE,2304.72,975.28,3280,,,14166.72,975.28,15142,,"No (officially, informally most offer the following)",4,16000,12720,,858,,,,,45447,2024-2025,0,0,0,0,"‰Û¢        Do you offer a guaranteed stipend for graduate students (both master‰Ûªs and PhD)?  Officially NO but all professors (most) did.
+‰Û¢        If so, how many years is this stipend guaranteed for?  2 years for MSc, 4 years for PHD
+‰Û¢        What is the minimum value of this stipend (either gross or net of tuition)?   16K$ per year
+‰Û¢        Are students required to TA or RA on non-thesis-related work to attain this minimum level?  NO
+‰Û¢        If TAing or RAing is required, how many hours per year (or week) does this entail? NA
+‰Û¢        Does the department have any initiatives in place to mitigate higher tuition and healthcare costs for international students?  It is at a higher level, they offer reduce inscription cost.
+",,,,,1353,16236,,-11496.63,-27732.63,-15555.63,1125,512,34
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,"If so, how many years is this stipend guaranteed for? 2 years for MSc, 4 years for PHD",,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,What is the minimum value of this stipend (either gross or net of tuition)? 16K$ per year,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,Are students required to TA or RA on non-thesis-related work to attain this minimum level? NO,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,"If TAing or RAing is required, how many hours per year (or week) does this entail? NA",,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,"Does the department have any initiatives in place to mitigate higher tuition and healthcare costs for international students? It is at a higher level, they offer reduce inscription cost.",,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sherbrooke,QC,Sherbrooke,NSERC,Biological Sciences - Ecology,Science,Biologie,MSc,,SecrÌ©tariat du DÌ©partement de biologie,etud.superieures.biologie@USherbrooke.ca,TRUE,FALSE,4321.35,1329.39,5650.74,13487.85,,29595,1335,30930,50% to Full,,,,,,,,,,,45447,,0,1,0,0,,https://www.usherbrooke.ca/admission/couts-et-aide-financiere/frais-scolarite,,19601,23197.65,,,"Sherbrooke Quebec, 167162 pop Large population center",-23197.65,-23197.65,-23197.65,771,365,
+,,,,,,,PhD,,,,TRUE,FALSE,4321.35,1329.39,5650.74,13487.85,,4320,1335,5655,Full,,,,,,,,,,,45447,,0,1,0,0,,https://www.usherbrooke.ca/admission/couts-et-aide-financiere/frais-scolarite,,,,,,,-23197.65,-23197.65,-23197.65,771,365,
+,,,NSERC,Physics,Science,Physique,MSc,,Physics Secretary,secretariat-physique@USherbrooke.ca,TRUE,FALSE,4321.35,1329.39,5650.74,13487.85,,29595,1335,30930,50% to Full,,,,,,,,,,,45447,,0,1,0,0,,https://www.usherbrooke.ca/admission/couts-et-aide-financiere/frais-scolarite,,,,,,,-23197.65,-23197.65,-23197.65,771,365,
+,,,,,,,PhD,,Academic Information,physique@USherbrooke.ca,TRUE,FALSE,4321.35,1329.39,5650.74,13487.85,,4320,1335,5655,Full,,,18000,,,,,,,,45447,2017?,0,1,0,0,,https://www.usherbrooke.ca/admission/couts-et-aide-financiere/frais-scolarite,https://www.usherbrooke.ca/physique/fileadmin/sites/physique/documents/Intranet/eFkt1T-English_information.pdf,,,,,,-23197.65,-23197.65,-23197.65,771,365,
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Regina,SK,Regina,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,23094,27331.59,1259,15108,,-27331.59,-42439.59,-31108.59,326,121,60
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1259,15108,,-27331.59,-42439.59,-31108.59,326,121,60
+,,,NSERC,Physics,Science,Physics,MSc,https://www.uregina.ca/science/physics/,Aram.Teymurazyan@uregina.ca',,TRUE,FALSE,4916.25,776.25,5692.5,,,4916.25,4779.75,9696,,Yes,,,,,,,,,,45418,,0,1,,,"Used 2023 fall, 2024 winter, 2024 spring/summer fees. Also used 5 credit hours for MSc, which is the mean number of credits/semester needed to finish in 4 years",https://www.uregina.ca/fs/students/fee-schedule.html,https://www.uregina.ca/science/physics/financial/graduate-finances.html,,,1259,15108,,-27331.59,-42439.59,-31108.59,326,121,60
+,,,,,,,PhD,,,,TRUE,FALSE,6374.25,1011.25,7385.5,,,6374.25,5014.75,11389,,Yes,,,,,,,,,,45418,,0,1,,,"NOTE FOR CALCULATION: International increase is hidden in the fees, not tuition as is typical",,,,,1259,15108,,-27331.59,-42439.59,-31108.59,326,121,60
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Saskatchewan,SK,Saskatoon,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,23513,27827.47,1258,15096,Saskatoon,-27827.47,-42923.47,-31601.47,1122,464,475
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1258,15096,,-27827.47,-42923.47,-31601.47,1122,464,475
+,,,NSERC,Physics,Science,Department of Physics and Engineering Physics,MSc,https://artsandscience.usask.ca/physics/index.php,phys-engphys_gradchair@usask.ca,,TRUE,FALSE,4932,1227.39,6159.39,,,11097,1227.39,12324.39,,Yes,2,18000,11841,,5676,,,60,,45419,"2024-2025 (assumed, stipend from email)",1,1.5,0,0,While there is a link that appears to discuss (Departmental guidelines and Action Plan for devolved scholarship funds) that link is dead.,https://students.usask.ca/money/tuition-fees/graduate-tuition.php,Email,,,1258,15096,,-15986.86,-31082.86,-19760.86,1122,464,475
+,,,,,,,PhD,,,,TRUE,FALSE,4932,1227.39,6159.39,,,4932,1227.39,6159.39,,Yes,4,20000,13841,,13841,,,60,,,,1,1.5,0,0,"‰Û¢        Do you offer a guaranteed stipend for graduate students (both master's and PhD)?  PhD students are guaranteed $20k/year and MSc are guaranteed $18k/year.
+
+‰Û¢         If so, how many years is this stipend guaranteed for? PhD is for 4 years; MSc is for 2 years.
+
+‰Û¢        What is the minimum value of this stipend (either gross or net of tuition)?  Students receive the full stipend, they pay their own tuition.
+ 
+‰Û¢        Are students required to TA or RA on non-thesis-related work to attain this minimum level?  Students who receive departmental scholarships as part of the stipend totals are required to do TA work.
+
+‰Û¢        If TAing or RAing is required, how many hours per year (or week) does this entail?  Dependent on the amount of the scholarship they can be assigned between 30-60 hours per term.
+
+‰Û¢        Does the department have any initiatives in place to mitigate higher tuition and healthcare costs for international students?  We do not at this time due to limited funding available. Some Professors will give their students an extra stipend payment at the beginning of the term to help with their tuition.  Most students receive more than the required minimum stipend amounts already.
+",,,,,1258,15096,,-13986.86,-29082.86,-17760.86,1122,464,475
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+UPEI,PEI,Charlottetown,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,22253,26336.27,,,Charlottetown,-26336.27,-26336.27,-26336.27,176,71,60
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-26336.27,-26336.27,-26336.27,176,71,60
+,,,NSERC,Physics,Science,Department of Physics,MSc,https://www.upei.ca/programs/physics,NO GRAD PROGRAM,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-26336.27,-26336.27,-26336.27,176,71,60
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-26336.27,-26336.27,-26336.27,176,71,60
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Brandon Univeristy,MB,Brandon,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,20839,24662.81,,,Brandon Manitoba,-24662.81,-24662.81,-24662.81,69,41,75
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-24662.81,-24662.81,-24662.81,69,41,75
+,,,NSERC,Physics,Science,Physics & Astronomy,MSc,https://www.brandonu.ca/physics/,No graduate program,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-24662.81,-24662.81,-24662.81,69,41,75
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-24662.81,-24662.81,-24662.81,69,41,75
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+British Columbia Institute of Technology,BC,Burnaby,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,25285,29924.62,,,"Surrey BC  518467 population - EXCEEDS largest non-vancouver bin (<499,999 pop), so using vancouver numbers",-29924.62,-29924.62,-29924.62,392,167,31
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-29924.62,-29924.62,-29924.62,392,167,31
+,,,NSERC,Physics,Science,Physics,MSc,https://www.bcit.ca/computing-academic-studies/physics/,No graduate program,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-29924.62,-29924.62,-29924.62,392,167,31
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,-29924.62,-29924.62,-29924.62,392,167,31
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ìäcole Polytechnique de MontrÌ©al,QC,Montreal,NSERC,Biological Sciences - Ecology,Science,Genie Biomedical,MSc,https://www.polymtl.ca/biomed/,,biomedical-es@polymtl.ca,FALSE,FALSE,4100,,4100,11000,,23100,,23100,,Discretion of Supervisor,1.66,20500,,,,,,,,45453,2024-2025,1,1,1,0,The numbers here are from the entire university and are based on some sort of discretion from the PI. ,https://www.polymtl.ca/futur/en/es/finances,https://share.polymtl.ca/alfresco/service/api/path/content;cm:content/workspace/SpacesStore/Company%20Home/Sites/avis-diffusion/documentLibrary/DRI/AvisDRI-003-MAFS-2023-2024.pdf?a=false&guest=true,20753,24561.03,1763,21156,Montreal,-24561.03,-45717.03,-29850.03,305,138,unable to find
+,,,,,,,PhD,,,,FALSE,FALSE,4100,,4100,4100,,4100,,4100,,Discretion of Supervisor,3,24000,,,,,,,,45453,2024-2025,1,1,1,0,,https://www.polymtl.ca/futur/en/es/finances,https://share.polymtl.ca/alfresco/service/api/path/content;cm:content/workspace/SpacesStore/Company%20Home/Sites/avis-diffusion/documentLibrary/DRI/AvisDRI-003-MAFS-2023-2024.pdf?a=false&guest=true,,,1763,21156,,-24561.03,-45717.03,-29850.03,,,
+,,,NSERC,Physics,Science,Genie Physique,MSc,https://www.polymtl.ca/phys/,,genie.physique@polymtl.ca,FALSE,FALSE,4100,,4100,11000,,23100,,23100,,Discretion of Supervisor,1.66,20500,,,,,,,,45453,2024-2025,1,1,1,0,,https://www.polymtl.ca/futur/en/es/finances,https://share.polymtl.ca/alfresco/service/api/path/content;cm:content/workspace/SpacesStore/Company%20Home/Sites/avis-diffusion/documentLibrary/DRI/AvisDRI-003-MAFS-2023-2024.pdf?a=false&guest=true,,,1763,21156,,-24561.03,-45717.03,-29850.03,,,
+,,,,,,,PhD,,,,FALSE,FALSE,4100,,4100,4100,,4100,,4100,,Discretion of Supervisor,3,24000,,,,,,,,45453,2024-2025,1,1,1,0,,https://www.polymtl.ca/futur/en/es/finances,https://share.polymtl.ca/alfresco/service/api/path/content;cm:content/workspace/SpacesStore/Company%20Home/Sites/avis-diffusion/documentLibrary/DRI/AvisDRI-003-MAFS-2023-2024.pdf?a=false&guest=true,,,1763,21156,,-24561.03,-45717.03,-29850.03,,,
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+University of Winnipeg,MB,Winnipeg,NSERC,Biological Sciences - Ecology,Science,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,22714,26881.86,1416,16992,,-26881.86,-43873.86,-31129.86,172,75,86
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1416,16992,,-26881.86,-43873.86,-31129.86,,,
+,,,NSERC,Physics,Science,Physics,MSc,,Program is through adjunct arrangement with Univ. Manitoba,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1416,16992,,-26881.86,-43873.86,-31129.86,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,1416,16992,,-26881.86,-43873.86,-31129.86,,,
+,,,SSHRC,Political Science,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,SSHRC,History,Social Science / Arts / Humanties,,MA,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,CIHR,Medical Science - Biochemistry & Molecular Biology,Medicine,,MSc,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,NSERC,Engineering - Civil,Engineering,,MEng,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,PhD,,,,FALSE,FALSE,,,0,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
