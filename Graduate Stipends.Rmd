@@ -1,11 +1,13 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 ```{r data_import}
 read.csv("Minimum Stipend Data Collection_v1.csv")->sos
 
-colnames(sos)
+# colnames(sos)
 
 #us https://www.nature.com/articles/d41586-022-01392-w
 read.csv("Biology Benchmark Comparison - 07-23-2024.csv")->us.data
