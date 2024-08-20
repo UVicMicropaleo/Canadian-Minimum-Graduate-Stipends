@@ -1,33 +1,23 @@
-par(mfcol=c(1,2))
-boxplot(sos$Net.Stipend[which(sos$Net.Stipend > 0)] ~ sos$Program[which(sos$Net.Stipend > 0)],
-        ylim=c(
-          min(
-            c(sos$Net.Stipend.Int,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend
-            ), 
-            na.rm=T)
-          ,max(
-            c(sos$Net.Stipend.Int,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
-            na.rm=T)
-        )
-        )
-boxplot(sos$Net.Stipend.Int[which(sos$Net.Stipend > 0)] ~ sos$Program[which(sos$Net.Stipend > 0)],
-        ylim=c(
-          min(
-            c(sos$Net.Stipend.Int,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend
-            ), 
-            na.rm=T)
-          ,max(
-            c(sos$Net.Stipend.Int,us.data$Annual.guaranteed.salary*us.to.cad,uk.stipend), 
-            na.rm=T)
-        )
-)
+clust <- makeCluster(2)
 
-mean(sos$Total.Domestic.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend[which(sos$Net.Stipend > 0)]*100,
-     na.rm=T)
-median(sos$Total.Domestic.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend[which(sos$Net.Stipend > 0)]*100,
-     na.rm=T)
 
-mean(sos$Total.Int.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend.International[which(sos$Net.Stipend > 0)]*100,
-     na.rm=T)
-median(sos$Total.Int.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend.International[which(sos$Net.Stipend > 0)]*100,
-       na.rm=T)
+glmm.net <- glmm(Net.Stipend ~ 0 + University.Endowment..Millions.of.Dollars., 
+            random = list(~ 0 + Example.Department,    ~ 0 + University), 
+            varcomps.names = c('Physics',"Biological Sciences - Ecology"), 
+            data = sos,
+            family.glmm = bernoulli.glmm, 
+            m = 10^4, 
+            debug = TRUE, 
+            cluster = clust)
+stopCluster(clust)
+
+sos[which(sos$Net.Stipend > 0),]->sos.trim
+
+
+
+mp1 <- glmer(Net.Stipend ~ 
+               University.Endowment..Millions.of.Dollars. + 
+               Example.Department + 
+                (1|University), 
+             data = sos.trim, 
+             family = "binomial")

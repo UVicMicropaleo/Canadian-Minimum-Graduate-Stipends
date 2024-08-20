@@ -267,7 +267,7 @@ Comparisons between Biology and Physics, in the same style as the above. Here ju
 
 
 
-# All plots
+# All plots - NOT PROOFED YET
 
 ```{r boxplots_domestic}
 # PhD vs. MSc
@@ -300,21 +300,21 @@ par(mfcol=c(1,2))
   
   ## Vs. poverty threshold (Domestic)
   par(mfcol=c(1,3))
-        ylimits<-c(min(c(sos$Net.domestic...MBM.Threshold..2024.,
+        ylimits<-c(min(c(sos$Net.domestic...MBM.Threshold..2023.,
                          {us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.}*us.to.cad,
                          uk.stipend-uk.cost.of.living.min,
                          uk.stipend-uk.cost.of.living.max), 
               na.rm=T),
-                   max(c(sos$Net.domestic...MBM.Threshold..2024.,
+                   max(c(sos$Net.domestic...MBM.Threshold..2023.,
                          {us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.}*us.to.cad,
                          uk.stipend-uk.cost.of.living.min,
                          uk.stipend-uk.cost.of.living.max), 
               na.rm=T)
                    )
-    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Program,
+    boxplot(sos$Net.domestic...MBM.Threshold..2023. ~ sos$Program,
             ylim=ylimits)
         abline(h=0)
-    boxplot(sos$Net.domestic...MBM.Threshold..2024.[which(sos$Net.Stipend > 0)] ~ sos$Program[which(sos$Net.Stipend > 0)],
+    boxplot(sos$Net.domestic...MBM.Threshold..2023.[which(sos$Net.Stipend > 0)] ~ sos$Program[which(sos$Net.Stipend > 0)],
             ylim=ylimits)
         abline(h=0)
         
@@ -356,7 +356,7 @@ par(mfcol=c(1,2))
     abline(h=0)
 
   ## Vs. poverty threshold (Domestic)
-    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Example.Department)
+    boxplot(sos$Net.domestic...MBM.Threshold..2023. ~ sos$Example.Department)
     abline(h=0)
 
 #Province
@@ -368,7 +368,7 @@ par(mfcol=c(1,2))
     boxplot(sos$Net.Stipend ~ sos$Province)
     abline(h=0)
   ## Vs. poverty threshold (Domestic)
-    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Province)
+    boxplot(sos$Net.domestic...MBM.Threshold..2023. ~ sos$Province)
     abline(h=0)
     
     #What fraction do university's collect as fees/tuition?
@@ -427,39 +427,15 @@ par(mfcol=c(1,2))
         par(mfcol=c(1,1))
   
   ## Vs. poverty threshold (int)
-    boxplot(sos$Net.International...MBM.Threshold..2024. ~ sos$Program,
-            ylim=c(min(c(sos$Net.International...MBM.Threshold..2024.,
-                         us.stipend.min-us.cost.of.living.min,
-                         uk.stipend-uk.cost.of.living.min,
-                         uk.stipend-uk.cost.of.living.max), 
-              na.rm=T),
-                   max(c(sos$Net.International...MBM.Threshold..2024.,
-                         us.stipend.max-us.stipend.max,
-                         uk.stipend-uk.cost.of.living.min,
-                         uk.stipend-uk.cost.of.living.max), 
-              na.rm=T)
-                   ))
-       boxplot(sos$Net.International...MBM.Threshold..2024.[which(sos$Net.Stipend > 0)] ~ sos$Program[which(sos$Net.Stipend > 0)],
-            ylim=c(min(c(sos$Net.International...MBM.Threshold..2024.,
-                         us.stipend.min-us.cost.of.living.min,
-                         uk.stipend-uk.cost.of.living.min,
-                         uk.stipend-uk.cost.of.living.max), 
-              na.rm=T),
-                   max(c(sos$Net.International...MBM.Threshold..2024.,
-                         us.stipend.max-us.stipend.max,
-                         uk.stipend-uk.cost.of.living.min,
-                         uk.stipend-uk.cost.of.living.max), 
-              na.rm=T)
-                   ))
+    boxplot(sos$Net.International...MBM.Threshold..2023. ~ sos$Program,
+            ylim=ylimits)
+       boxplot(sos$Net.International...MBM.Threshold..2023.[which(sos$Net.Stipend > 0)] ~ sos$Program[which(sos$Net.Stipend > 0)],
+            ylim=ylimits)
     
     
     
     
-    abline(h=0)
-    abline(h=c(us.stipend.max-us.cost.of.living.max,
-               us.stipend.min-us.cost.of.living.min),col="red")
-    abline(h=c(uk.stipend-uk.cost.of.living.min,
-               uk.stipend-uk.cost.of.living.max),col="blue")
+
   
 # Bio vs. Physics
   ## Gross Stipend (Domestic) Boxplots
@@ -471,7 +447,7 @@ par(mfcol=c(1,2))
     abline(h=0)
 
   ## Vs. poverty threshold (Domestic)
-    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Example.Department)
+    boxplot(sos$Net.domestic...MBM.Threshold..2023. ~ sos$Example.Department)
     abline(h=0)
 
 #Province
@@ -483,7 +459,7 @@ par(mfcol=c(1,2))
     boxplot(sos$Net.Stipend ~ sos$Province)
     abline(h=0)
   ## Vs. poverty threshold (Domestic)
-    boxplot(sos$Net.domestic...MBM.Threshold..2024. ~ sos$Province)
+    boxplot(sos$Net.domestic...MBM.Threshold..2023. ~ sos$Province)
     abline(h=0)
 
         #What fraction do university's collect as fees/tuition?
@@ -496,45 +472,35 @@ median(sos$Total.Int.Fees[which(sos$Net.Stipend > 0)]/sos$Gross.Stipend.Internat
 
 
 ```{r scatters}
-plot(sos$Endowment[which(sos$Program == "MSc")],
+plot(sos$University.Endowment..Millions.of.Dollars.[which(sos$Program == "MSc")],
      sos$Net.Stipend[which(sos$Program == "MSc")],
      pch=1,
      lwd=2,
      cex=1.25,
      col="dodgerblue",
      ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
-points(sos$Endowment[which(sos$Program == "PhD")],
+points(sos$University.Endowment..Millions.of.Dollars.[which(sos$Program == "PhD")],
      sos$Net.Stipend[which(sos$Program == "PhD")],
      pch=16,
      cex=.75,
      col="firebrick2")
-cor.test(sos$Endowment,
+cor.test(sos$University.Endowment..Millions.of.Dollars.,
      sos$Net.Stipend,use="complete.obs")
 
 
-plot(sos$Operating.Grant,
+
+
+
+plot(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.,
      sos$Net.Stipend,
      pch=16,
      col="dodgerblue",
      ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
-points(sos$Operating.Grant[which(sos$Program == "PhD")],
+points(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.[which(sos$Program == "PhD")],
      sos$Net.Stipend[which(sos$Program == "PhD")],
      pch=16,
      col="firebrick2")
-cor.test(sos$Operating.Grant,
-     sos$Net.Stipend,use="complete.obs")
-
-
-plot(sos$Total.Expenses,
-     sos$Net.Stipend,
-     pch=16,
-     col="dodgerblue",
-     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
-points(sos$Total.Expenses[which(sos$Program == "PhD")],
-     sos$Net.Stipend[which(sos$Program == "PhD")],
-     pch=16,
-     col="firebrick2")
-cor.test(sos$Total.Expenses,
+cor.test(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.,
      sos$Net.Stipend,use="complete.obs")
 
 
@@ -542,57 +508,47 @@ cor.test(sos$Total.Expenses,
 
 
 
-plot(sos$Endowment[which(sos$Example.Department == "Physics")],
+plot(sos$University.Endowment..Millions.of.Dollars.[which(sos$Example.Department == "Physics")],
      sos$Net.Stipend[which(sos$Example.Department == "Physics")],
      pch=16,
      col="purple",
      ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
-points(sos$Endowment[which(sos$Example.Department == "Biological Sciences - Ecology")],
+points(sos$University.Endowment..Millions.of.Dollars.[which(sos$Example.Department == "Biological Sciences - Ecology")],
      sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
      pch=15,
      col="forestgreen")
-cor.test(sos$Endowment,
+cor.test(sos$University.Endowment..Millions.of.Dollars.,
      sos$Net.Stipend,use="complete.obs")
 
 
-plot(sos$Operating.Grant[which(sos$Example.Department == "Physics")],
+
+
+
+plot(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.[which(sos$Example.Department == "Physics")],
      sos$Net.Stipend[which(sos$Example.Department == "Physics")],
      pch=16,
      col="purple",
      ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
-points(sos$Operating.Grant[which(sos$Example.Department == "Biological Sciences - Ecology")],
+points(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.[which(sos$Example.Department == "Biological Sciences - Ecology")],
      sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
      pch=15,
      col="forestgreen")
-cor.test(sos$Operating.Grant,
-     sos$Net.Stipend,use="complete.obs")
-
-
-plot(sos$Total.Expenses[which(sos$Example.Department == "Physics")],
-     sos$Net.Stipend[which(sos$Example.Department == "Physics")],
-     pch=16,
-     col="purple",
-     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
-points(sos$Total.Expenses[which(sos$Example.Department == "Biological Sciences - Ecology")],
-     sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
-     pch=15,
-     col="forestgreen")
-cor.test(sos$Total.Expenses,
+cor.test(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.,
      sos$Net.Stipend,use="complete.obs")
 
 
 # Vs. post MBM
 
-plot(sos$Endowment[which(sos$Program == "MSc")],
-     sos$Net.domestic...MBM.Threshold..2024.[which(sos$Program == "MSc")],
+plot(sos$University.Endowment..Millions.of.Dollars.[which(sos$Program == "MSc")],
+     sos$Net.domestic...MBM.Threshold..2023.[which(sos$Program == "MSc")],
      pch=1,
      lwd=2,
      cex=1.25,
      col="dodgerblue",
-     ylim=c(min(sos$Net.domestic...MBM.Threshold..2024.,na.rm=T),0),
+     ylim=c(min(sos$Net.domestic...MBM.Threshold..2023.,na.rm=T),0),
      main="Endowment vs. poverty line")
-points(sos$Endowment[which(sos$Program == "PhD")],
-     sos$Net.domestic...MBM.Threshold..2024.[which(sos$Program == "PhD")],
+points(sos$University.Endowment..Millions.of.Dollars.[which(sos$Program == "PhD")],
+     sos$Net.domestic...MBM.Threshold..2023.[which(sos$Program == "PhD")],
      pch=16,
      cex=.75,
      col="firebrick2")
@@ -601,33 +557,23 @@ points(sos$Endowment[which(sos$Program == "PhD")],
 #     pch=16,
 #     cex=1,
 #     col="green")
-cor.test(sos$Endowment,
-     sos$Net.domestic...MBM.Threshold..2024.,use="complete.obs")
+cor.test(sos$University.Endowment..Millions.of.Dollars.,
+     sos$Net.domestic...MBM.Threshold..2023.,use="complete.obs")
 
 
-plot(sos$Operating.Grant,
+
+
+
+plot(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.,
      sos$Net.Stipend,
      pch=16,
      col="dodgerblue",
      ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
-points(sos$Operating.Grant[which(sos$Program == "PhD")],
+points(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.[which(sos$Program == "PhD")],
      sos$Net.Stipend[which(sos$Program == "PhD")],
      pch=16,
      col="firebrick2")
-cor.test(sos$Operating.Grant,
-     sos$Net.Stipend,use="complete.obs")
-
-
-plot(sos$Total.Expenses,
-     sos$Net.Stipend,
-     pch=16,
-     col="dodgerblue",
-     ylim=c(0,max(sos$Net.Stipend,na.rm=T)))
-points(sos$Total.Expenses[which(sos$Program == "PhD")],
-     sos$Net.Stipend[which(sos$Program == "PhD")],
-     pch=16,
-     col="firebrick2")
-cor.test(sos$Total.Expenses,
+cor.test(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.,
      sos$Net.Stipend,use="complete.obs")
 
 ```
