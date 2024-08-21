@@ -13,6 +13,9 @@ stopCluster(clust)
 
 sos[which(sos$Net.Stipend > 0),]->sos.trim
 
+as.factor(sos$University)->sos$University
+
+as.factor(sos$Example.Department)->sos$Example.Department
 
 
 mp1 <- glmer(Net.Stipend ~ 
