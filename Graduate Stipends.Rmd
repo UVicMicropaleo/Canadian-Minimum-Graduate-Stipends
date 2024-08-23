@@ -5,7 +5,7 @@ output:
     df_print: paged
 ---
 ```{r data_import}
-read.csv("Minimum Stipend Data Collection_v1.csv")->sos
+read.csv("Minimum Stipend Data Collection_v1_2.csv")->sos
 
 # colnames(sos)
 
@@ -37,7 +37,6 @@ NSERC.msc<-27000
 NSERC.phd<-40000
 
 ```
-
 
 ### NOTES from during converstion to a machine readable datafile ###
 McMaster, both departments, provide "more to offset higher tuition" to the international MSc students, but the amount is unspecified.
@@ -159,34 +158,6 @@ cor.test(sos$University.Endowment..Millions.of.Dollars.,
 # Line of correlation
   lm(sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")] ~ sos$University.Endowment..Millions.of.Dollars.[which(sos$Example.Department == "Biological Sciences - Ecology")] )->lm.end
   abline(lm.end)
-  
-#chi sq tests
-    #median(sos$University.Endowment..Millions.of.Dollars.,na.rm=T)->ue
-    #median(sos$Net.Stipend,na.rm=T)->ns
-  # or 
-    1500->ue
-    15000->ns
-abline(v=ue)
-abline(h=ns)
-
-length(which(sos$University.Endowment..Millions.of.Dollars. >= ue & 
-               sos$Net.Stipend >= ns))->up.right
-length(which(sos$University.Endowment..Millions.of.Dollars. < ue & 
-               sos$Net.Stipend >= ns))->up.left
-length(which(sos$University.Endowment..Millions.of.Dollars. < ue & 
-               sos$Net.Stipend < ns))->down.left
-length(which(sos$University.Endowment..Millions.of.Dollars. >= ue & 
-               sos$Net.Stipend < ns))->down.right
-# table
-as.table(rbind(c(up.left,up.right),c(down.left,down.right)))->table
-chisq.test(table)
-
-#GLMM
-##
-##library(lme4 )
-
-### WAS WORKING HERE ###
-
 ```
 
 ```{r Annual_expenses}
@@ -251,10 +222,21 @@ Comparisons between Biology and Physics, in the same style as the above. Here ju
 
 
 
+#### ADD
+```{r International}
+mean(sos$Total.Int.Fees[which(sos$Guaranteed.Funding == "Yes")]/sos$Gross.Stipend.International[which(sos$Guaranteed.Funding == "Yes")]*100,
+       na.rm=T)
+median(sos$Total.Int.Fees[which(sos$Guaranteed.Funding == "Yes")]/sos$Gross.Stipend.International[which(sos$Guaranteed.Funding == "Yes")]*100,
+       na.rm=T)
 
+  par(mfcol=c(1,1))
 
+    boxplot(sos$Net.International...MBM.Threshold..2023.[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Supported International students vs. poverty line")
+        abline(h=0)
 
-
+```
 
 
 
