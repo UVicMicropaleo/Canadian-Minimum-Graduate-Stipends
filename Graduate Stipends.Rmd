@@ -17,14 +17,9 @@ us.to.cad<-1.38
 
 
 #uk https://www.ukri.org/apply-for-funding/studentships-and-doctoral-training/london-weighting-enhanced-stipends-and-co-funding/
-#https://trustforlondon.org.uk/data/poverty-thresholds/
-  #uk cost of living
-#https://homelet.co.uk/homelet-rental-index
   #uk average rent
 uk.stipend<-19237
 #uk.tuition.stipend<-4786
-166*52->uk.cost.of.living.min
-304*52->uk.cost.of.living.max
 uk.to.cad<-1.78
 
 #convert from gbp to cad
