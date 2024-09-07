@@ -78,39 +78,28 @@ difference between US and Canada: `r mean(sos$Net.Stipend[which(sos$Guaranteed.F
 ```{r visual_inspection}
 sos.df <- as.data.frame(sos)
 data.class(sos.df$Gross.Stipend)
-
+data.class(sos.df$Net.Stipend)
 sos.df$endowment <- sos.df$University.Endowment..Millions.of.Dollars.
-#sos.df$endowment <- as.numeric(sos.df$endowment)
-
-#Median stipend 
-med.stipend <- median(sos.df$Gross.Stipend, na.rm = TRUE)
-med.stipend
-
-
-med.stipend <- median(sos.df$Net.Stipend, na.rm = TRUE)
-med.stipend
+data.class(sos.df$endowment)
 
 #Histogram of values - visually inspect to see if skewed
-hist1 <- hist(sos.df$Gross.Stipend,main = "Gross Stipend",xlab = "Value ($CAD)")
+histGross <- hist(sos.df$Gross.Stipend,main = "Gross Stipend",xlab = "Value ($CAD)")
+histNet <- hist(sos.df$Net.Stipend,main = "Net Stipend",xlab = "Value ($CAD)")
 
-hist2 <- hist(sos.df$Net.Stipend,main = "Net Stipend",xlab = "Value ($CAD)")
+summary(sos.df$Gross.Stipend)
+summary(sos.df$Net.Stipend)
 
 #Remove NAs
 sos.df <- sos.df %>%
-  dplyr::filter(!is.na(Gross.Stipend))
-
-summary(sos.df$Gross.Stipend)
-
-sos.df <- sos.df %>%
+  dplyr::filter(!is.na(Gross.Stipend))%>%
   dplyr::filter(!is.na(Net.Stipend))
 
+summary(sos.df$Gross.Stipend)
 summary(sos.df$Net.Stipend)
 
-#Histogram of values - visually inspect to see if skewed
-hist1 <- hist(sos.df$Gross.Stipend,main = "Gross Stipend",xlab = "Value ($CAD)")
-
-#Histogram of values - visually inspect to see if skewed
-hist2 <- hist(sos.df$Net.Stipend,main = "Net Stipend",xlab = "Value ($CAD)")
+#Histogram of values
+histGross <- hist(sos.df$Gross.Stipend,main = "Gross Stipend",xlab = "Value ($CAD)")
+histNet <- hist(sos.df$Net.Stipend,main = "Net Stipend",xlab = "Value ($CAD)")
 
 #Scale stipend 
 sos.df<- sos.df %>%
@@ -125,8 +114,19 @@ sd(sos.df$scaledNetStipend)
 
 
 #Histogram of values - visually inspect to see if skewed
-hist3 <- hist(sos.df$scaledGrossStipend,main = "Gross Stipend",xlab = "Value ($CAD)")
-hist4 <- hist(sos.df$scaledNetStipend,main = "Net Stipend",xlab = "Value ($CAD)")
+histGrossscaled <- hist(sos.df$scaledGrossStipend,main = "Gross Stipend",xlab = "Value ($CAD)")
+histNetscaled <- hist(sos.df$scaledNetStipend,main = "Net Stipend",xlab = "Value ($CAD)")
+
+
+
+#Endowment
+histEndow <- hist(sos.df$endowment,main = "Endowment",xlab = "Value ($CAD)") #highly skewed
+
+#Log-transform 
+sos.df<- sos.df %>%
+  mutate(logEndowment = log10(endowment)) 
+
+histlogEndow <- hist(sos.df$logEndowment,main = "Endowment (log10 transformed)",xlab = "Value ($CAD)") 
 ```
 
 #Plots for the paper.
@@ -254,54 +254,54 @@ chisq.test(table)
 
 #Q-Q Plots for scaled Gross Stipend
 
-  data.class(sos.df$scaledGrossStipend)
-  sos.df$scaledGrossStipend.SQ <- sqrt(sos.df$scaledGrossStipend)
-  sos.df$scaledGrossStipend.SQ4 <- sos.df$scaledGrossStipend^(0.25)
-  sos.df$scaledGrossStipend.Log <- log(sos.df$scaledGrossStipend)+1
+  data.class(sos.df$Gross.Stipend)
+  sos.df$Gross.Stipend.SQ <- sqrt(sos.df$Gross.Stipend)
+  sos.df$Gross.Stipend.SQ4 <- sos.df$Gross.Stipend^(0.25)
+  sos.df$Gross.Stipend.Log <- log(sos.df$Gross.Stipend)+1
   
   
   op<-par(mfrow=c(2,2), mar=c(4,3,3,2))
-  qqnorm(sos.df$scaledGrossStipend, main="None (p=1)")
-  qqline(sos.df$scaledGrossStipend)
-  qqnorm(sos.df$scaledGrossStipend.SQ, main="Square root (p=0.5)")
-  qqline(sos.df$scaledGrossStipend.SQ)
-  qqnorm(sos.df$scaledGrossStipend.SQ4,main="Fourth root (p=0.25)")
-  qqline(sos.df$scaledGrossStipend.SQ4)
-  qqnorm(sos.df$scaledGrossStipend.Log,main="Logarirthmic (p=0)")
-  qqline(sos.df$scaledGrossStipend.Log)
+  qqnorm(sos.df$Gross.Stipend, main="None (p=1)")
+  qqline(sos.df$Gross.Stipend)
+  qqnorm(sos.df$Gross.Stipend.SQ, main="Square root (p=0.5)")
+  qqline(sos.df$Gross.Stipend.SQ)
+  qqnorm(sos.df$Gross.Stipend.SQ4,main="Fourth root (p=0.25)")
+  qqline(sos.df$Gross.Stipend.SQ4)
+  qqnorm(sos.df$Gross.Stipend.Log,main="Logarirthmic (p=0)")
+  qqline(sos.df$Gross.Stipend.Log)
   par(op)
 
 
 #Q-Q Plots for scaled Net Stipend
   
-  data.class(sos.df$scaledNetStipend)
-  sos.df$scaledNetStipend.SQ <- sqrt(sos.df$scaledNetStipend)
-  sos.df$scaledNetStipend.SQ4 <- sos.df$scaledNetStipend^(0.25)
-  sos.df$scaledNetStipend.Log <- log(sos.df$scaledNetStipend)+1
+  data.class(sos.df$Net.Stipend)
+  sos.df$Net.Stipend.SQ <- sqrt(sos.df$Net.Stipend)
+  sos.df$Net.Stipend.SQ4 <- sos.df$Net.Stipend^(0.25)
+  sos.df$Net.Stipend.Log <- log(sos.df$Net.Stipend)+1
   
   
   op<-par(mfrow=c(2,2), mar=c(4,3,3,2))
-  qqnorm(sos.df$scaledNetStipend, main="None (p=1)")
-  qqline(sos.df$scaledNetStipend)
-  qqnorm(sos.df$scaledNetStipend.SQ, main="Square root (p=0.5)")
-  qqline(sos.df$scaledNetStipend.SQ)
-  qqnorm(sos.df$scaledNetStipend.SQ4,main="Fourth root (p=0.25)")
-  qqline(sos.df$scaledNetStipend.SQ4)
-  qqnorm(sos.df$scaledNetStipend.Log,main="Logarirthmic (p=0)")
-  qqline(sos.df$scaledNetStipend.Log)
+  qqnorm(sos.df$Net.Stipend, main="None (p=1)")
+  qqline(sos.df$Net.Stipend)
+  qqnorm(sos.df$Net.Stipend.SQ, main="Square root (p=0.5)")
+  qqline(sos.df$Net.Stipend.SQ)
+  qqnorm(sos.df$Net.Stipend.SQ4,main="Fourth root (p=0.25)")
+  qqline(sos.df$Net.Stipend.SQ4)
+  qqnorm(sos.df$Net.Stipend.Log,main="Logarirthmic (p=0)")
+  qqline(sos.df$Net.Stipend.Log)
   par(op)
 
 
 
 #Filter NA endowment data 
-
-  sos.df <- sos.df %>%
+sos.df <- sos.df %>%
     filter(!is.na(endowment)) %>%
     collect()%>%
     filter(Guaranteed.Funding == "Yes")
 
 #Number of data rows remaining
   nrow(sos.df) 
+  n_distinct(sos.df$University)
   
   sos.datasummary <- sos.df %>%
   group_by(Province) %>% 
@@ -310,17 +310,17 @@ chisq.test(table)
 
 
 #GLMM Net
-  NMSm1 <- lmer(scaledNetStipend ~ 
-                      endowment
-                     + Program
-              +  Example.Department
-                    + (1|Province),   data = sos.df)
+  NMSm1 <- lmer(Net.Stipend ~ 
+                    logEndowment
+                    + Program
+                    + Example.Department
+                    + (1|Province/University),   data = sos.df)
   NMSm1
   
   summary(NMSm1)
-  visreg(NMSm1, "scaledNetStipend", by = "Program")
-  visreg(NMSm1, "endowment", by = "Example.Department")
-  visreg(NMSm1, "endowment", by = "Province")
+  visreg(NMSm1, "logEndowment", by = "Program")
+  visreg(NMSm1, "logEndowment", by = "Example.Department")
+  visreg(NMSm1, "logEndowment", by = "Province")
   resid(NMSm1)
   plot(density(resid(NMSm1)))
   qqnorm(resid(NMSm1))
@@ -337,50 +337,6 @@ chisq.test(table)
        type=c("p","smooth"), col.line=1)
 #Residuals v Leveragae
   plot(NMSm1, rstudent(.) ~ hatvalues(.))
-
-
-
-
-
-
-#GLMM Gross
-  GMSm1 <- lmer(scaledGrossStipend ~ 
-                      endowment
-                     + Program
-                +Example.Department
-                    + (1|Province/University),   data = sos.df)
-  GMSm1
-  
-  summary(GMSm1)
-  visreg(GMSm1, "endowment", by = "Program")
-  visreg(GMSm1, "endowment", by = "Example.Department")
-  visreg(GMSm1, "scaledNetStipend")
-  resid(GMSm1)
-  plot(density(resid(GMSm1)))
-  qqnorm(resid(GMSm1))
-  plot(GMSm1)
-  AIC(GMSm1)
-  plot(sos.df$endowment,resid(GMSm1))
-#Quartiles 
-  quantilesstipend <- quantile(sos.df$scaledNetStipend, prob=c(.25,.5,.75), type=1)
-  quantstipend.df <- as.data.frame(quantilesstipend)
-  colnames(quantstipend.df)[1]<-"quants"
-  
-  q1stip <- quantstipend.df[1, 1] 
-  q2stip <- quantstipend.df[2, 1] 
-  q3stip <- quantstipend.df[3, 1] 
-  q4stip <- quantstipend.df[2, 1] 
-
-
-#GLMM Gross
-  GMSm1 <- lmer(scaledGrossStipend ~ 
-                      endowment
-                     + Program
-                +Example.Department
-                    + (1|University/Province),   data = sos.df)
-  GMSm1
-  summary(GMSm1)
-
 
 ```
 
