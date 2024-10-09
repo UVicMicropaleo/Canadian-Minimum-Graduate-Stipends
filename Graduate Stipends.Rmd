@@ -71,10 +71,10 @@ International students repay `r mean(sos$Total.Int.Fees[which(sos$Guaranteed.Fun
 
 
 
-Mean MBM Shortfall Domestic: `r mean(sos$Net.domestic...MBM.Threshold..2023.[which(sos$Guaranteed.Funding == "Yes")],na.rm=T)`
+Mean MBM Shortfall Domestic: `r mean(sos$Net.domestic...MBM.Threshold..2023.,na.rm=T)`
 Mean MBM Shortfall International: `r mean(sos$Net.International...MBM.Threshold..2023.,na.rm=T)`
 
-difference between US and Canada: `r mean(sos$Net.Stipend[which(sos$Guaranteed.Funding == "Yes")]) - mean(us.data$Annual.guaranteed.salary*us.to.cad)`
+difference between US and Canada: `r mean(sos$Net.Stipend,na.rm=T) - mean(us.data$Annual.guaranteed.salary*us.to.cad)`
 ```{r visual_inspection}
 sos.df <- as.data.frame(sos)
 data.class(sos.df$Gross.Stipend)
@@ -136,8 +136,8 @@ hist4 <- hist(sos.df$scaledNetStipend,main = "Net Stipend",xlab = "Value ($CAD)"
       #setting up a stable y to maintain through various plots
         ylimits<-c(min(c(sos$Net.domestic...MBM.Threshold..2024.,
                          {us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.}*us.to.cad,
-                         uk.stipend-uk.cost.of.living.min,
-                         uk.stipend-uk.cost.of.living.max), 
+                         uk.stipend,
+                         uk.stipend), 
               na.rm=T),
                    max(c(sos$Gross.Stipend,
                          {us.data$Annual.guaranteed.salary}*us.to.cad,
@@ -147,7 +147,7 @@ hist4 <- hist(sos.df$scaledNetStipend,main = "Net Stipend",xlab = "Value ($CAD)"
                    )
         
   ## Gross Stipend (Domestic) Boxplots        
-    boxplot(sos$Gross.Stipend[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+    boxplot(sos$Gross.Stipend ~ sos$Program,
             ylim=ylimits,
             main="Gross Domestic")
     abline(h=0,col="black")
@@ -163,7 +163,7 @@ Left panel is Canadian domestic students gross minimum stipends, two red are for
     
 ```{r Net_domestic}      
   ## Net Stipend (Domestic) Boxplots
-    boxplot(sos$Net.Stipend[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+    boxplot(sos$Net.Stipend ~ sos$Program,
             ylim=ylimits,
             main="Net Domestic")
     abline(h=0,col="black")
@@ -178,7 +178,7 @@ Same labeling conventions as above.
   ## Vs. poverty threshold (Domestic)
   par(mfcol=c(1,1))
 
-    boxplot(sos$Net.domestic...MBM.Threshold..2023.[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+    boxplot(sos$Net.domestic...MBM.Threshold..2023. ~ sos$Progra,
             ylim=ylimits,
             main="Supported Domestic students vs. poverty line")
         abline(h=0)
@@ -448,6 +448,19 @@ Comparisons between Biology and Physics, in the same style as the above. Here ju
 
 # International Plots
 ```{r International}
+    boxplot(sos$Gross.Stipend.International[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Supported International students")
+        abline(h=0)
+
+
+    boxplot(sos$Net.Stipend.Int[which(sos$Guaranteed.Funding == "Yes")] ~ sos$Program[which(sos$Guaranteed.Funding == "Yes")],
+            ylim=ylimits,
+            main="Supported International students")
+        abline(h=0)
+
+
+
 mean(sos$Total.Int.Fees[which(sos$Guaranteed.Funding == "Yes")]/sos$Gross.Stipend.International[which(sos$Guaranteed.Funding == "Yes")]*100,
        na.rm=T)
 median(sos$Total.Int.Fees[which(sos$Guaranteed.Funding == "Yes")]/sos$Gross.Stipend.International[which(sos$Guaranteed.Funding == "Yes")]*100,
