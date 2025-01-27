@@ -135,9 +135,8 @@ histlogEndow <- hist(sos.df$logEndowment,main = "Endowment (log10 transformed)",
   par(mfcol=c(1,2))
       #setting up a stable y to maintain through various plots
         ylimits<-c(min(c(sos$Net.domestic...MBM.Threshold..2024.,
-                         {us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.}*us.to.cad,
-                         uk.stipend-uk.cost.of.living.min,
-                         uk.stipend-uk.cost.of.living.max), 
+                         {us.data$Annual.guaranteed.salary-us.data$MIT.Living.Wage..1.adult..0.children.}*us.to.cad
+                         ), 
               na.rm=T),
                    max(c(sos$Gross.Stipend,
                          {us.data$Annual.guaranteed.salary}*us.to.cad,
@@ -174,6 +173,7 @@ Left panel is Canadian domestic students gross minimum stipends, two red are for
     abline(h=uk.stipend,col="blue")
 ```
 Same labeling conventions as above.
+
 ```{r domestic_poverty}
   ## Vs. poverty threshold (Domestic)
   par(mfcol=c(1,1))
@@ -183,6 +183,7 @@ Same labeling conventions as above.
             main="Supported Domestic students vs. poverty line")
         abline(h=0)
 ```
+
 Same labeling conventions as above. This has had the Market Basket Metric removed, as a measure of poverty provided by the government. Again, this is only for students with support. All students in departments without a minimum graduate stipend have been removed.
 ## Supplemental figures
 ```{r domestic_poverty_Rentals}
@@ -379,6 +380,19 @@ points(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.[which(sos
      pch=15,
      col="forestgreen")
 cor.test(sos$University.Total.Annual.Expenses.2023..Millions.of.Dollars.,
+     sos$Net.Stipend,use="complete.obs")
+
+plot(sos$University.Endowment..Millions.of.Dollars.[which(sos$Example.Department == "Physics")],
+     sos$Net.Stipend[which(sos$Example.Department == "Physics")],
+     pch=16,
+     col="purple",
+     ylim=c(0,max(sos$Net.Stipend,na.rm=T)),
+     main="Endowment vs. Net stipends")
+points(sos$University.Endowment..Millions.of.Dollars.[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     sos$Net.Stipend[which(sos$Example.Department == "Biological Sciences - Ecology")],
+     pch=15,
+     col="forestgreen")
+cor.test(sos$University.Endowment..Millions.of.Dollars.,
      sos$Net.Stipend,use="complete.obs")
 
 
